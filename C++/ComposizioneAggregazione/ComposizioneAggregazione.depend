@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1620214472 source:c:\users\claudio\desktop\composizioneaggregazione\main.cpp
+	"Libro.h"
+	"Editore.h"
+
+1620213518 c:\users\claudio\desktop\composizioneaggregazione\libro.h
+	<iostream>
+	<cstring>
+
+1620213618 source:c:\users\claudio\desktop\composizioneaggregazione\libro.cpp
+	"Libro.h"
+
+1620214555 c:\users\claudio\desktop\composizioneaggregazione\editore.h
+	"Libro.h"
+	<cstring>
+	<iostream>
+
+1620214603 source:c:\users\claudio\desktop\composizioneaggregazione\editore.cpp
+	"Editore.h"
+

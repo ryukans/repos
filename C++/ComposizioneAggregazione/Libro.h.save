@@ -1,0 +1,18 @@
+#ifndef LIBRO_H_INCLUDED
+#define LIBRO_H_INCLUDED
+
+class Libro
+{
+public:
+    Libro();
+    Libro(const char*, const int, const int, const int);
+    ~Libro();
+private:
+    //static const int ISBN = 13;
+    char* titolo;
+    int data_edizione;
+    int data_acquisto;
+    int isbn;
+};
+
+#endif // LIBRO_H_INCLUDED

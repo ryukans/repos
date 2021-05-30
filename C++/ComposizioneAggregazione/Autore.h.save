@@ -1,0 +1,23 @@
+#ifndef AUTORE_H_INCLUDED
+#define AUTORE_H_INCLUDED
+
+#include "Libro.h"
+#include <cstring>
+#include <iostream>
+
+class Autore
+{
+public:
+    Autore();
+    Autore(const char*, const char*, const int);
+    Autore();
+
+private:
+    char* nome;
+    char* cognome;
+    int bday;
+
+};
+
+
+#endif // AUTORE_H_INCLUDED

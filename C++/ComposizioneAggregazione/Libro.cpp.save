@@ -1,0 +1,49 @@
+#include "Libro.h"
+
+Libro::Libro()
+    : titolo(new char[1]), data_edizione(0), data_acquisto(0), isbn(0)
+{
+    strcpy(titolo, "");
+}
+
+Libro::Libro(const char* T, const int D_EDIZ, const int D_ACQ, const int ISBN)
+    : titolo(new char[strlen(T)+1]), data_edizione(D_EDIZ), data_acquisto(D_ACQ), isbn(ISBN)
+{
+    strcpy(titolo, T);
+}
+
+Libro::Libro(Libro& L)
+    : titolo(new char[strlen(L.titolo)+1]), data_edizione(L.data_edizione), data_acquisto(L.data_acquisto), isbn(L.isbn)
+{
+    strcpy(titolo, L.titolo);
+}
+
+const Libro& Libro::operator=(const Libro& L)
+{
+    if (this != &L){
+       delete[] titolo;
+       titolo = new char[strlen(L.titolo)+1];
+       strcpy(titolo, L.titolo);
+       data_edizione = L.data_edizione;
+       data_acquisto = L.data_acquisto;
+       isbn = L.isbn;
+    }
+
+    return *this;
+}
+
+
+Libro::~Libro() {
+    delete[] titolo;
+}
+
+
+ostream& Libro::operator<<(ostream& out, Libro& L)
+{
+    out << L.titolo << " " << L.data_edizione << " " << L.data_acquisto << " " << L.isbn << endl;
+
+    return out;
+}
+
+
+
