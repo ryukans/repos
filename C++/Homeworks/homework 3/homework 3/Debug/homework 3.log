@@ -1,0 +1,4 @@
+﻿  main.cpp
+  List.cpp
+C:\Users\claudio\source\repos\srcdevelop\homework 3\homework 3\List.cpp(38): warning C4715: 'List::operator=': not all control paths return a value
+  homework 3.vcxproj -> C:\Users\claudio\source\repos\srcdevelop\homework 3\Debug\homework 3.exe
