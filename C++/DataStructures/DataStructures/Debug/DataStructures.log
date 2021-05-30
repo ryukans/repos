@@ -1,0 +1,8 @@
+﻿  DataStructures.cpp
+  LinkedListLIFO.cpp
+C:\Users\claudio\source\repos\DataStructures\DataStructures\LinkedListLIFO.cpp(92,3): error C2561: 'LinkedListLIFO::has': function must return a value
+C:\Users\claudio\source\repos\DataStructures\DataStructures\LinkedListLIFO.cpp(89): message : see declaration of 'LinkedListLIFO::has'
+C:\Users\claudio\source\repos\DataStructures\DataStructures\LinkedListLIFO.cpp(104,3): error C2561: 'LinkedListLIFO::has': function must return a value
+C:\Users\claudio\source\repos\DataStructures\DataStructures\LinkedListLIFO.cpp(101): message : see declaration of 'LinkedListLIFO::has'
+  Queue.cpp
+  Generating Code...
