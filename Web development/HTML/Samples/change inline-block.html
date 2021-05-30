@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>change inline-clock</title>
+		<style type="text/css">
+			.one>li {
+				display: inline;
+				margin-right: 10px;
+			}
+			.one>li.coming-soon {
+				display: none;
+			}
+
+			.two>li {
+				display: inline;
+				margin-right: 10px;
+			}
+			.two>li.coming-soon {
+				visibility: hidden;
+			}
+		</style>
+	</head>
+
+	<body>
+		<ul class="one">
+			<li>Home</li>
+			<li>Products</li>
+			<li class="coming-soon">Services</li>
+			<li>About</li>
+			<li>Contact</li>
+		</ul>
+
+		<ul class="two">
+			<li>Home</li>
+			<li>Products</li>
+			<li class="coming-soon">Services</li>
+			<li>About</li>
+			<li>Contact</li>
+		</ul>
+	</body>
+</html>

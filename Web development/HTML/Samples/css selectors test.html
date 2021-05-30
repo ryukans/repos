@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<!-- See page 292 -->
+	<head>
+		<title>Selectors</title>
+		<style type="text/css">
+			p[class] { /* EXISTENCE */
+				text-shadow: 1px 1px 2px black;
+			}
+			p[class = "p1"] { /* EQUALITY */
+				color: deeppink;
+			}
+			p[class ~= "p3"] { /* SPACE */
+				color: darkcyan;
+			}
+			p[class ^= "test"] { /*  PREFIX */
+				color: deeppink;
+			}
+			p[id *= "cdef"] { /* SUBSTRING */
+				color: darkcyan;
+			}
+			p[class $= "1"] { /* SUFFIX */
+				background-color: darkcyan;
+				padding: 5px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<p class="p1">hi there</p>
+		<p class="p2">hello there</p>
+		<p class="text text p3">'sup</p>
+		<p class="test p1">hi there, again</p>
+		<p id="abcdef">abcdef</p>
+	</body>
+</html>

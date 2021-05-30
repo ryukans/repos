@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS</title>
+</head>
+
+<body>
+<!--CSS can be added to HTML elements in 3 ways:
+
+Inline - by using the style attribute in HTML elements
+Internal - by using a <style> element in the <head> section
+External - by using an external CSS file
+-->
+
+<h1> Inline CSS </h1>
+<!--An inline CSS is used to apply a unique style to a single HTML element-->
+
+<h3> Example </h3>
+
+<code> style="color:blue;">This is a Blue Heading </code>
+
+<h1> Internal CSS </h1>
+<!--An internal CSS is used to define a style for a single HTML page-->
+<!--An internal CSS is defined in the <head> section of an HTML page, within a <style> element-->
+
+<h3> Example </h3>
+<code>
+
+	body {background-color: powderblue;}
+	h1   {color: blue;}
+	p    {color: red;}
+
+</code>
+
+<hr>
+
+<h1> External CSS </h1> 
+<!--With an external style sheet, you can change the look of an entire web site, by changing one file!-->
+<!--To use an external style sheet, add a link to it in the <head> section of the HTML page-->
+
+<h3> Example </h3>
+
+<code>
+	el="stylesheet" href="styles.css">
+</code>
+
+<!--An external style sheet can be written in any text editor. The file must not contain any HTML code, and must be saved with a .css extension-->
+
+<h4> Source example </h4>
+
+<code>
+	body {
+    	background-color: powderblue;
+	}
+	
+    h1 {
+    	color: blue;
+	}
+	
+    p {
+    	color: red;
+	}
+</code>
+
+<hr>
+
+<h1> CSS Fonts </h1>
+<!--The CSS color property defines the text color to be used
+The CSS font-family property defines the font to be used
+The CSS font-size property defines the text size to be used
+-->
+
+<h3> Example </h3>
+
+<code>
+h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+}
+p  {
+    color: red;
+    font-family: courier;
+    font-size: 160%;
+}
+</code>
+
+<h1> CSS Border </h1>
+<!--The CSS border property defines a border around an HTML element-->
+<code>
+
+<h3> Example </h3>
+
+p {
+    border: 1px solid powderblue;
+}
+</code>
+
+<h1> CSS Padding </h1>
+<!--The CSS padding property defines a padding (space) between the text and the border-->
+
+<h3> Example </h3>
+
+<code>
+p {
+    border: 1px solid powderblue;
+    padding: 30px;
+}
+</code>
+
+<h1> CSS Margin </h1>
+<!--The CSS margin property defines a margin (space) outside the border-->
+
+<h3> Example </h3>
+
+<code>
+p {
+    border: 1px solid powderblue;
+    margin: 50px;
+}
+</code>
+
+<h1> The id Attribute </h1>
+<!--To define a specific style for one special element, add an id attribute to the element-->
+
+<h3> Example </h3>
+
+<p> id="p01">I am different </p>
+
+<h4> Head code </h4>
+
+<code>
+#p01 {
+    color: blue;
+}
+</code>
+
+<hr>
+
+<h1> The class Attribute </h1>
+
+
+    
+
+</body>
+
+</html>

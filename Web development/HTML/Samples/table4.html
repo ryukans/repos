@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Table</title>
+		<style type="text/css">
+			body {
+				font-family: Arial, Verdana, sans-serif;
+				color: #111111;
+			}
+			.songTable {
+				width: 620px;
+			}
+			th, td{
+				padding: 10px;
+			}
+			.head th {
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				border-top: 2px solid #999;
+				border-bottom: 2px solid #999;
+			}
+			.songTable td:hover {
+				background-color: #c3e6e5;
+				color: deeppink;
+				font
+			}
+			.even {
+				background-color: #efefef;
+			}
+			.song {
+				text-align: left;
+			}
+			.album {
+				text-align: center;
+			}
+			.artist {
+				text-align: right;
+			}
+			.two td, .three td {
+				border: 1px solid #0088dd;
+				padding: 15px;
+			}
+			.two {
+				margin-top: 100px;
+				empty-cells: show; /*default value*/
+			}
+			.three {
+				margin: 50px 0px 50px 0px;
+				empty-cells: hide;
+			}
+			.four td {
+				margin-bottom: 100px;
+				background-color: #0088dd;
+				padding: 15px;
+				border: 2px solid #000000;
+			}
+			.four {
+				border-spacing: 5px 15px;
+			}
+			.five td {
+				margin-top: 50px;
+				background-color: #0088dd;
+				padding: 15px;
+				border: 2px solid #000000;
+			}
+			.five {
+				border-collapse: collapse;
+			}
+		</style>
+	</head>
+
+	<body>
+		<table class="songTable">
+			<tr class="head">
+				<th>Song</th><th>Album</th><th>Artist</th>
+			</tr>
+			<tr>
+				<td class="song">Sweet Child o' Mine</td> <td class="album">Appetite for Destruction</td> <td class="artist">Guns N' Roses</td>
+			</tr>
+			<tr class="even">
+				<td class="song">In the Air Tonight</td> <td class="album">Face Value</td> <td class="artist">Phil Collins</td>
+			</tr>
+			<tr>
+				<td class="song">Detroit Rock City</td> <td class="album">Destroyer</td> <td class="artist">Kiss</td>
+			</tr>
+			<tr class="even">
+				<td class="song">Just Awake</td> <td class="album">All That We Have Now</td> <td class="artist">Fear, and Loating in Las Vegas</td>
+			</tr>
+		</table>
+		
+
+		
+		<table class="two">
+			<tr>
+				<td>1</td><td>2</td>
+			</tr>
+			<tr>
+				<td>3</td><td></td>
+			</tr>
+		</table>
+
+		<table class="three">
+			<tr>
+				<td>1</td><td>2</td>
+			</tr>
+			<tr>
+				<td>3</td><td></td>
+			</tr>
+		</table>
+
+		<table class="four">
+			<tr>
+				<td>1</td><td>2</td>
+			</tr>
+			<tr>
+				<td>3</td><td></td>
+			</tr>
+		</table>
+
+		<table class="five">
+			<tr>
+				<td>1</td><td>2</td>
+			</tr>
+			<tr>
+				<td>3</td><td></td>
+			</tr>
+		</table>
+
+	</body>
+</html>

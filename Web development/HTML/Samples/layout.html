@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flow</title>
+		<style type="text/css">
+			body {
+				width: 750px;
+				font-family: Arial, Verdana, sans-serif;
+				color: #665544;
+			}
+			div {
+				margin-bottom: 20px;
+			}
+			h1 {
+				background-color: #efefef;
+				padding: 10px;
+			}
+			.one p { 
+				width: 450px; 
+			}
+			.two p {
+				position: relative;
+				top: 10px;
+				left: 100px;
+			}
+			.three h1 {
+				background-color: #fff;
+				position: absolute;
+				top: 400px;
+				left: 250px;
+				width: 250px;
+			}
+			.three p {
+				position: relative;
+				width: 250px;
+				top: 150px;
+			}
+			.four h1 {
+				position: fixed;
+				top: 10px;
+				left: 80%;
+				padding: 10px;
+				margin: 0px;
+				width: 15%;
+				background-color: #efefef;
+			}
+			.four p {
+				margin-top: 300px;
+			}
+			/*	By default, most browsers add
+				a margin to the top of the <h1>
+				element. This is why there is
+				a gap between the top of the
+				browser and the box containing
+				the <h1> element. If you wanted
+				to remove this margin, you could
+				add the following code to the
+				<h1> element's style rules:
+				margin: 0px; */
+		</style>
+	</head>
+
+	<body>
+		<!--Relative Positioning (Browser Default)-->
+		<div class="one">
+			<h1>The Evolution of the Bicycle</h1>
+
+			<p>In 1817 Baron von Drais invented a walking
+			machine that would help him get around the
+			royal gardens faster...</p>
+		</div>
+
+		<!--Relative Posiotioning-->
+		<div class="two">
+			<h1>The Evolution of the Bicycle</h1>
+			
+			<p>In 1817 Baron von Drais invented a walking
+			machine that would help him get around the
+			royal gardens faster...</p>
+		</div>
+
+		<!--Absolute Positioning-->
+		<div class="three">
+			<h1>The Evolution of the Bicycle</h1>
+			
+			<p>In 1817 Baron von Drais invented a walking
+			machine that would help him get around the
+			royal gardens faster...</p>
+		</div>
+
+		<!--Fixed Positioning-->
+		<div class="four">
+			<h1>The Evolution of the Bicycle</h1>
+			
+			<p>In 1817 Baron von Drais invented a walking
+			machine that would help him get around the
+			royal gardens faster...</p>
+		</div>
+
+		
+	</body>
+</html>

@@ -1,0 +1,92 @@
+change color
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body {background-color:yellow}
+	h1   {color:blue}
+	p    {color:black}
+</style>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+________________________________
+change font
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color:lightgrey; font-family:courier}
+h1   {color:blue}
+p    {color:black}
+</style>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+__________________________________
+id
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p#special {
+    background-color:black;
+    color:white;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+
+<p>This is a paragraph.</p>
+<p>This is also paragraph.</p>
+<p id="special">special</p>
+
+</body>
+</html>
+
+_____________________________________
+class
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+p.intro {
+    background-color:black;
+    color:white;
+    border:1px solid grey;
+    padding:10px;
+    margin:30px;
+    font-size:150%;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+
+<p class="intro">This is a paragraph.</p>
+<p class="intro">This is a paragraph.</p>
+<p class="intro">This is a paragraph.</p>
+
+</body>
+</html>

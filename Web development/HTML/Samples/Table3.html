@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Table 2</title>
+		<style type="text/css">
+			table {
+				font-family: Arial;
+			}
+			th {
+				background-color: #D4D4D4;
+			}
+			td {
+				background-color: #B9B9B9;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<table> <!--No table headers added here-->
+ 			<tr>
+ 				<td>15</td>
+ 				<td>15</td>
+ 				<td>30</td>
+ 			</tr>
+ 			
+			<tr>
+				<td>45</td>
+				<td>60</td>
+				<td>45</td>
+ 			</tr>
+ 			
+			<tr>
+				<td>60</td>
+				<td>90</td>
+				<td>90</td>
+			</tr>
+		</table>
+		
+		<br />
+		<br />
+		<br />
+		<br />
+		
+		<table>
+ 			<tr>
+ 				<th></th>
+ 				<th scope="col">Saturday</th>
+ 				<th scope="col">Sunday</th>
+ 			</tr>
+ 			
+			<tr>
+ 				<th scope="row">Tickets sold:</th>
+				<td>120</td>
+ 				<td>135</td>
+ 			</tr>
+ 			
+			<tr>
+ 				<th scope="row">Total sales:</th>
+ 				<td>$600</td>
+ 				<td>$675</td>
+			</tr>
+		</table>
+		
+		<!--colspan-->
+		
+		<br />
+		<br />
+		<br />
+		<br />
+		
+		<table cellpadding="4" cellspacing="2">
+			<tr>
+				<th></th>
+				<th>8/9</th>
+				<th>9/10</th>
+				<th>10/11</th>
+				<th>11/12</th>
+				<th>12/13</th>
+				<th>13/14</th>
+				<th>14/15</th>
+			</tr>
+			<tr>
+				<th sope="row">Lunedì</th>
+				<td colspan="3">Sistemi e reti</td>
+				<td>Matematica</td>
+				<td>Italiano</td>
+				<td>Ed fisica</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th scope="row">Martedì</th>
+				<td>Matematica</td>
+				<td colspan="2">Italiano</td>
+				<td colspan="2">Tipsit</td>
+				<td>Informatica</td>
+				<td>Religione</td>
+			</tr>
+			<tr>
+				<th scope="row">Mercoledì</th>
+				<td colspan="3">Italiano</td>
+				<td>Inglese</td>
+				<td>Informatica</td>
+				<td>Matematica</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th scope="row">Giovedì</th>
+				<td colspan="3">Informatica</td>
+				<td>Inglese</td>
+				<td>Italiano</td>
+				<td>Matematica</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th scope="row">Venerdì</th>
+				<td>Matematica</td>
+				<td colspan="2">Sistemi e reti</td>
+				<td>Inglese</td>
+				<td>Matematica</td>
+				<td>Italiano</td>
+				<td>Ed fisica</td>
+			</tr>
+		</table>
+		
+		<br />
+		<br />
+		<br />
+		<br />
+		
+		<!--rowspan-->
+
+		<table cellpadding="5" cellspacing="1">
+ 			<tr>
+ 				<th></th>
+ 				<th>Lunedì</th>
+				<th>Martedì</th>
+			 	<th>Mercoledì</th>
+				<th>Giovedì</th>
+				<th>Venerdì</th>
+			 </tr>
+			 <tr>
+			 	<th>8 - 9</th>
+				<td rowspan="3">Sistemi e reti</td>
+				<td>Matematica</td>
+				<td rowspan="3">Italiano</td>
+				<td rowspan="3">Informatica</td>
+				<td>Matematica</td>
+			 </tr>
+			 <tr>
+				 <th>9 - 10</th>
+				 <td rowspan="2">Italiano</td>
+				 <td rowspan="2">Sistemi e reti</td>
+			 </tr>
+			 <tr>
+			 	<th>10 - 11</th>
+			 </tr>
+			 <tr>
+			 	<th>11 - 12</th>
+				<td>Matematica</td>
+				<td rowspan="2">Tipsit</td>
+				<td>Inglese</td>
+				<td>Italiano</td>
+				<td>Inglese</td>
+			 </tr>
+			 <tr>
+			 	<th>12 - 13</th>
+				<td>Italiano</td>
+				<td>Matematica</td>
+				<td>Inglese</td>
+				<td>Matematica</td>
+			 </tr>
+			 <tr>
+			 	<th>13 - 14</th>
+				<td>Ed Fisica</td>
+				<td>Informatica</td>
+				<td>Inglese</td>
+				<td>Matematica</td>
+				<td>Italiano</td>
+			 </tr>
+			 <tr>
+			 	<th>14 - 15</th>
+				<td></td>
+				<td>Religione</td>
+				<td></td>
+				<td></td>
+				<td>Ed fisica</td>
+			 </tr>
+		</table>
+		
+		<br />
+		<br />
+		<br />
+		<br />
+		
+		<!--long table-->
+		
+		<table>
+ 			<thead>
+ 				<tr>
+ 					<th>Date</th>
+					<th>Income</th>
+					<th>Expenditure</th>
+ 				</tr>
+			</thead>
+			<tbody>
+ 				<tr>
+					<th>1st January</th>
+					<td>250</td>
+					<td>36</td>
+				</tr>
+				
+				<tr>
+					<th>2nd January</th>
+					<td>285</td>
+					<td>48</td>
+				</tr>
+				
+				<!-- additional rows go here -->
+				
+				<tr>
+					<th>31st January</th>
+					<td>129</td>
+					<td>64</td>
+				</tr>
+			</tbody>
+			
+			<tfoot>
+				<tr>
+					<td></td>
+					<td>7824</td>
+					<td>1241</td>
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
