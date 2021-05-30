@@ -1,0 +1,11 @@
+﻿  Packet.cpp
+  Prova2Marzo2012.cpp
+C:\Users\claudio\source\repos\Prova2Marzo2012\Prova2Marzo2012\Vector.h(30,49): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\claudio\source\repos\Prova2Marzo2012\Prova2Marzo2012\Vector.h(31,38): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+  Vector.cpp
+C:\Users\claudio\source\repos\Prova2Marzo2012\Prova2Marzo2012\Vector.h(30,49): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\claudio\source\repos\Prova2Marzo2012\Prova2Marzo2012\Vector.h(31,38): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\claudio\source\repos\Prova2Marzo2012\Prova2Marzo2012\Vector.cpp(71,58): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\claudio\source\repos\Prova2Marzo2012\Prova2Marzo2012\Vector.cpp(79,46): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+  Generating Code...
+  Prova2Marzo2012.vcxproj -> C:\Users\claudio\source\repos\Prova2Marzo2012\Debug\Prova2Marzo2012.exe
