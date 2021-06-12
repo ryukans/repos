@@ -1,0 +1,4 @@
+﻿  linkedList.cpp
+C:\Users\claudio\source\repos\srcdevelop\linkedList\linkedList\List.h(34,46): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\claudio\source\repos\srcdevelop\linkedList\linkedList\List.h(35,46): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+  linkedList.vcxproj -> C:\Users\claudio\source\repos\srcdevelop\linkedList\Debug\linkedList.exe
