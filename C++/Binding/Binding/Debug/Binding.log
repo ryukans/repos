@@ -1,8 +1,0 @@
-﻿  Binding.cpp
-C:\Users\claudio\source\repos\Binding\Binding\Binding.cpp(7,9): error C2259: 'Person': cannot instantiate abstract class
-C:\Users\claudio\source\repos\Binding\Binding\Person.h(6): message : see declaration of 'Person'
-C:\Users\claudio\source\repos\Binding\Binding\Binding.cpp(7,9): message : due to following members:
-C:\Users\claudio\source\repos\Binding\Binding\Binding.cpp(7,9): message : 'void Person::print(void) const': is abstract
-C:\Users\claudio\source\repos\Binding\Binding\Person.h(11): message : see declaration of 'Person::print'
-  Person.cpp
-  Generating Code...
