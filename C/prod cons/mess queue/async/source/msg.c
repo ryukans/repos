@@ -24,7 +24,7 @@ int main()
             usleep(100);
             producer(queue, m);
         }
-        _exit(0);
+        _exit(1);
     }
     
     pid = fork();
@@ -34,7 +34,7 @@ int main()
         for (i = 0; i < 10; i++){
             consumer(queue);
         }
-        _exit(0);
+        _exit(2);
     }
 
     for (i = 0; i < 2; i++){

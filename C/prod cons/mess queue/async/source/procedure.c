@@ -24,6 +24,7 @@ void consumer(int queue)
     messagebuf mbuf;
 
     msgrcv(queue, (void*)&mbuf, sizeof(messagebuf)-sizeof(long), MESSAGE, 0);
+    msginfo(queue);
 }
 
 void msginfo(int queue)

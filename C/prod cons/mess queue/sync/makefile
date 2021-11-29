@@ -12,3 +12,5 @@ procedure.o: ./header/procedure.h ./source/procedure.c
 clean:
 	rm -rf ./*.o
 	rm -rf ./main
+
+
