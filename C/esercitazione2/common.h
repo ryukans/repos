@@ -33,6 +33,7 @@ typedef pid_t msg[BUFFER_DIM];
 typedef struct messagebuf{
    long type;
    msg pids;
+   
 } mex_server;
 
 

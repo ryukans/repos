@@ -9,6 +9,7 @@
 #include <sys/wait.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include "sem.h"
 
 #define SIZE 15 // capacità massima 
 
@@ -23,18 +24,18 @@ typedef struct {
     char line[SIZE];
     int index;
     int riemp; //riempimento
-} buffer;
+} Buffer;
 
 
 //lettori
-void elabora(buffer* buf);
-void analizza(buffer* buf);
+void elabora(Buffer* buf);
+void analizza(Buffer* buf);
 
 //scrittore
-void genera(int sem, buffer* buf);
+void genera(int sem, Buffer* buf);
 
-void iniziolettra(int sem, buffer* buf);
-void finelettura(int sem, buffer* buf);
+void iniziolettra(int sem, Buffer* buf);
+void finelettura(int sem, Buffer* buf);
 void inizioscrittura(int sem);
 void finescrittura(int sem);
 
@@ -59,7 +60,7 @@ void finelettura(int sem, Buffer* buf)
     buf->numlettori = buf->numlettori - 1;
     
     if (buf->numlettori == 0) //se sono l'ultimo lettore devo rilasciare la risorsa per gli scrittori
-        signalsemsem, SYNCH);
+        signalsem(sem, SYNCH);
     
     signalsem(sem, MUTEXL); //rilascio il mutex per altri lettori
 }
