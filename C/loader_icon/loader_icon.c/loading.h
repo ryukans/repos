@@ -6,7 +6,7 @@
 enum frames {
 	verticalLine	= 0xB3,
 	forwardSlash	= 0x2F,
-	backSlash		= 0x5C,
+	backSlash	= 0x5C,
 	horizontalLine	= 0xC4
 };
 

@@ -15,7 +15,7 @@ int main()
     
     Buffer* buf;
 
-    if((buf = shmat(shmem, NULL, 0)) == (void*)-1){
+    if((buf = (Buffer*) shmat(shmem, NULL, 0)) == (void*)-1){
         perror("Error shmat\n");
         exit(1);
     }
