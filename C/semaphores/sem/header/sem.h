@@ -4,7 +4,7 @@
 #include<sys/ipc.h>
 #include<sys/sem.h>
 
-int wait_sem(int sem_id, int numsem);
-int signal_sem(int sem_id, int numsem);
+int waitsem(int sem_id, int numsem);
+int signalsem(int sem_id, int numsem);
 
 

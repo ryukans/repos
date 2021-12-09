@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <errno.h>
-#include "sem.h"
+#include "../header/sem.h"
 
-int wait_sem(int sem_id, int sem_num)
+int waitsem(int sem_id, int sem_num)
 {
     int op;
     struct sembuf buf;
 
-    buff.sem_flg = 0;
-    buff.sem_num = sem_num;
-    buff.sem_op = -1;
+    buf.sem_flg = 0;
+    buf.sem_num = sem_num;
+    buf.sem_op = -1;
 
     op = semop(sem_id, &buf, 1);
 
@@ -20,14 +20,14 @@ int wait_sem(int sem_id, int sem_num)
 }
 
 
-int signal_sem(int sem_id, int sem_num)
+int signalsem(int sem_id, int sem_num)
 {
     int op;
     struct sembuf buf;
 
-    buff.sem_flg = 0;
-    buff.sem_num = sem_num;
-    buff.sem_op = 1;
+    buf.sem_flg = 0;
+    buf.sem_num = sem_num;
+    buf.sem_op = 1;
 
     op = semop(sem_id, &buf, 1);
 

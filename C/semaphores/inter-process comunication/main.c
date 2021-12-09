@@ -1,13 +1,12 @@
 #include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <errno.h>
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <sys/ipc.h>
 #include <sys/shm.h>
-#include <sys/sem.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <errno.h>
-#include "sem.h"
+#include "../sem/header/sem.h"
 
 #define NUM_PROC 2
 
@@ -41,12 +40,11 @@ int main()
 
 
     *shmptr = 0; //Initialize shared memory
-    semctl(semid, 0, SETVAL, 1); //Initialize semaphores
+    semctl(semid, 0, SETVAL, 1); //Initialize semaphore (1)
     
     int i;
-    pid_t pid;
     for (i = 0; i < NUM_PROC; i++){
-        pid = fork();
+        pid_t pid = fork();
 
         if(pid < 0) {
             perror("Error FORK\n");
@@ -54,17 +52,23 @@ int main()
         }
 
         if(pid == 0){  
+            printf("Process[%d] PID=%d created\n", i, getpid());
             int j;
-            for (j = 0; j < 100; j++){
-                wait_sem(semid, 0);
+            for (j = 0; j < 5; j++){
+                waitsem(semid, 0);
                 
                 //BEGIN CRITIC SECTION
+                
+                int tmp = *shmptr;
                 printf("Process %d has read\n", i);
-                (*shmptr)++;
-                printf("Process %d has incremented\n");
+                sleep(1); //optional, it makes the exection slower in order to emphasize the race condition between the two processes on the variable -tmp-
+                //(*shmptr)++;
+                *shmptr = tmp+1;
+                printf("Process %d has incremented\n", i);
+
                 //END CRITIC SECTION
 
-                signal_sem(semid, 0);
+                signalsem(semid, 0);
             }
             exit(EXIT_SUCCESS);
         }

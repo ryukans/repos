@@ -1,5 +1,4 @@
 #include "../header/procedure.h"
-#include "../header/sem.h"
 
 void producer(int* data, int sem)
 {
