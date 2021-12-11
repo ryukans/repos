@@ -10,10 +10,7 @@ enum lwps{
     NUM_PROD = 5
 };
 
-#define TIMER_INDEX (NUM_PROD+NUM_CONS)
-
-pthread_attr_t attr;
-pthread_t threads[NUM_PROD+NUM_CONS+1]; //5 produttori, 1 consumatore e 1 timer
+//#define TIMER_INDEX (NUM_PROD+NUM_CONS)
 
 typedef struct {
 

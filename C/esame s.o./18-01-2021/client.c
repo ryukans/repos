@@ -31,12 +31,12 @@ int main(int argc, char *argv[]){
 
 	srand(time(NULL));
 	
-	misura.tipo = misura.id = id_sensore; //[1, 3]
-
+	
 	// TODO: inviare in cilco NUM_REQ misure da inviare al server tramite coda
 	for (i = 0; i < NUM_REQ; i++){
 		misura.val = rand()%101;
-		msgsnd(coda, &misura, sizeof(Misura)-sizeof(long), IPC_NOWAIT);
+		misura.tipo = misura.id = id_sensore; //[1, 3]
+		msgsnd(coda, &misura, sizeof(Misura)-sizeof(long), 0);
 		printf("[Client %d] Message %d id: %ld sent\n", getpid(), i, misura.tipo);
 	}
 

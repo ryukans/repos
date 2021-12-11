@@ -58,7 +58,7 @@ int preleva_somma_finale(Buffer* b){
 	pthread_mutex_lock(&b->mutex);
 
 	while(b->count != NUM_WORKER*NUM_REQ){
-		printf("[COLLECTOR] - count %d < 30\n", b->count);
+		//printf("[DEBUG] - count %d < 30\n", b->count);
 		pthread_cond_wait(&b->prelievo, &b->mutex);
 	}
 
@@ -101,11 +101,11 @@ void *worker(void* arg){
 
 	int i;
 	long msgtype = (long)p->id;
-	printf("[WORKER] - ricezione mess %ld \n", msgtype);
+	printf("[WORKER] - reciving messages id: %ld \n", msgtype);
 
 	for(i = 0; i < NUM_REQ; i++){
 		msgrcv(coda, (void*)&m, sizeof(Misura)-sizeof(long), msgtype, 0);
-		printf("[WORKER] - mess %ld rivecuto\n", msgtype);
+		printf("[WORKER] - message %d id: %ld recived\n", i, msgtype);
 		aggiorna_somma(p->b, m.val);
 	}
 
