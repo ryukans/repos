@@ -16,7 +16,7 @@ int main()
     int shm_buf, shm_nscorte;
     
     buffer* buf;
-    int* nscorte;
+    int* nscorte;   //variabile che funge da riempinento, si poteva aggiungere anche nella struct buffer (non previsto dalla traccia) 
 
     shm_buf = shmget(IPC_PRIVATE, sizeof(buffer), IPC_CREAT | 0664);
     shm_nscorte = shmget(IPC_PRIVATE, sizeof(int), IPC_CREAT | 0664);

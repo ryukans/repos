@@ -77,7 +77,7 @@ void inserisci_operando(MonitorOperandi * m, int operando){
         pthread_cond_wait(&m->cvprod, &m->mutex);
     
 	m->operandi[m->testa] = operando;
-	m->testa = (m->testa+1)&DIM_BUFFER;
+	m->testa = (m->testa+1)%DIM_BUFFER;
 	m->count++;
 
 	//printf("Operandi inseriti\n");
