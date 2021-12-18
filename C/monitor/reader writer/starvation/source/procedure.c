@@ -1,70 +1,78 @@
 #include "../header/procedure.h"
 
-int read(Buffer* buf)
+void startr(Buffer* buf)
 {
-    int val;
+    enter_monitor(&buf->monitor);
 
-    enter_monitor(&(buf->monitor));
+    while(buf->nwriters > 0)
+        waitcond(&buf->monitor, VAR_COND_READER);
+    
+    buf->nreaders++;
+    
+    leave_monitor(&buf->monitor);
+}
 
-    while (buf->nwriter > 0){
-        printf("Reading suspended\n");
-        wait_condition(&(buf->monitor), VAR_COND_READER);
-        printf("Reading resumed\n");
-    }
-
-    buf->nreader++;
-
-    leave_monitor(&(buf->monitor));
+T read(Buffer* buf)
+{
+    T val;
+    
+    startr(buf);
 
     sleep(2);
-
     val = buf->buffer;
     printf("Value read: %d", val);
 
-    enter_monitor(&(buf->monitor));
-
-    buf->nreader--;
-
-    if(buf->nreader == 0)
-        signal_condition(&(buf->monitor), VAR_COND_WRITER);
-
-    leave_monitor(&(buf->monitor));
+    endr(buf);
 
     return val;
 }
 
-void write(Buffer* buf, int val)
+void endr(Buffer* buf)
 {
-    enter_monitor(&(buf->monitor));
+    enter_monitor(&buf->monitor);
 
-    while(buf->nreader > 0 || buf->nwriter > 0){
-        printf("Writing suspended\n");
-        wait_condition(&(buf->monitor), VAR_COND_WRITER);
-        printf("Writing resumed\n");
-    }
-    
-    buf->nwriter++;
+    buf->nreaders--;
+    if(buf->nreaders == 0)
+        signalcond(&buf->monitor, VAR_COND_WRITER);
 
-    leave_monitor(&(buf->monitor));
-
-    sleep(1);
-    
-    buf->buffer = val;
-    printf("Value written: %d\n", val);
-
-    enter_monitor(&(buf->monitor));
-
-    buf->nwriter--;
-
-    if(queue_condition(&(buf->monitor), VAR_COND_WRITER))
-        signal_condition(&(buf->monitor), VAR_COND_WRITER);
-    else
-        signal_all(&(buf->monitor), VAR_COND_READER);
-
-    
-    leave_monitor(&(buf->monitor));
+    leave_monitor(&buf->monitor);
 }
 
+void startw(Buffer* buf)
+{
+    enter_monitor(&buf->monitor);
+
+    while(buf->nreaders > 0 || buf->nwriters > 0)
+        waitcond(&buf->monitor, VAR_COND_WRITER);
+    
+    buf->nwriters++;
+
+    leave_monitor(&buf->monitor);
+}
+
+void write(Buffer* buf, int val)
+{
+	startw(buf);
+
+	sleep(1);
+	buf->buffer = val;
+	printf("Value written: %d\n", val);
+
+	endw(buf);
+}
+
+void endw(Buffer* buf)
+{
+    enter_monitor(&buf->monitor);
+
+    buf->nwriters--;
+	if(queueconds(&(buf->monitor), VAR_COND_WRITER)) //&buf->monitor.condcounts[VAR_COND_WRITER] > 0
+        signalconds(&(buf->monitor), VAR_COND_WRITER);
+    else
+        signalall(&(buf->monitor), VAR_COND_READER);
+
+	leave_monitor(&buf->monitor);
+}
 
 
 

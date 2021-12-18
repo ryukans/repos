@@ -35,7 +35,7 @@ int main()
 
     // memory and sems initialization
     *shmptr = 0;
-    semctl(sem, AVAIL_SPACE, SETVAL, 1);
+    semctl(sem, AVAIL_SPACE, SETVAL, 1); // AVAIL_SPACE = DIM (1) 
     semctl(sem, AVAIL_MSG, SETVAL, 0);
 
     pid_t pid;

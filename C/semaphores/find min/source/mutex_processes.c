@@ -39,13 +39,13 @@ void childproc(
 
     int i;
     int min = INT_MAX;
-
-    waitsem(sem_id, 0);
-
+    // la ricerca del minimo non viene esguita in mutua esclusione perchè ogni processo lavora con una propria partizione dedicatagli
     for (i = first_elem; i < first_elem+nelem; i++){
         if (vector[i] < min)
             min = vector[i];
     }
+
+    waitsem(sem_id, 0); // accedo alla risorsa condivisa in mutua esclusione,
 
     printf("Figlio: Il minimo locale è %d\n", min);
 

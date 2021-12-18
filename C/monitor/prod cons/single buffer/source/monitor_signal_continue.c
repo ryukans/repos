@@ -5,24 +5,24 @@ static void waitsem(int idsem, int numsem);
 static void signalsem(int idsem, int numsem);
 static int queuesem(int idsems, int numsem);
 
-void init_monitor(Monitor* m, int n_var)
+void init_monitor(Monitor* m, int nconds)
 {
     int i;
     
-    // sem for mutex
+    // sem for monitor mutex
     m->mutex = semget(IPC_PRIVATE, 1, IPC_CREAT | 0664);
     semctl(m->mutex, 0, SETVAL, 1);
 
-    // sem for var condition
-    m->idconds = semget(IPC_PRIVATE, n_var, IPC_CREAT | 0664);
-    for (i = 0; i < n_var; i++) semctl(m->idconds, i, SETVAL, 0);
+    // sems for var conditions
+    m->idconds = semget(IPC_PRIVATE, nconds, IPC_CREAT | 0664);
+    for (i = 0; i < nconds; i++) semctl(m->idconds, i, SETVAL, 0);
     
-    // allocate a counter on a shared mem for each var cond
-    m->idshmem = shmget(IPC_PRIVATE, n_var*sizeof(int), IPC_CREAT | 0664);
-    m->condcounts = (int*) shmat(m->idshmem, NULL, 0);
+    // allocate array of condition counters on shared mem
+    m->idshmconds = shmget(IPC_PRIVATE, nconds*sizeof(int), IPC_CREAT | 0664);
+    m->condcounts = (int*) shmat(m->idshmconds, NULL, 0);
 
-    m->varconds = n_var;
-    for (i = 0; i < n_var; i++) m->condcounts[i] = 0;  
+    m->nconds = nconds;
+    for (i = 0; i < nconds; i++) m->condcounts[i] = 0;  
 }
 
 void enter_monitor(Monitor* m)
@@ -38,30 +38,32 @@ void leave_monitor(Monitor* m)
 void remove_monitor(Monitor* m)
 {
     semctl(m->mutex, 0, IPC_RMID, 0);
-    semctl(m->idconds, m->varconds, IPC_RMID, 0);
-    shmctl(m->idshmem, IPC_RMID, 0);
+    semctl(m->idconds, m->nconds, IPC_RMID, 0);
+    shmctl(m->idshmconds, IPC_RMID, 0);
 }
 
-void wait_condition(Monitor* m, int id_var)
+void wait_condition(Monitor* m, int idcond)
 {
-    m->condcounts[id_var]++;
+    m->condcounts[idcond]++;
 
     signalsem(m->mutex, 0);
-    waitsem(m->idconds, id_var);
+
+    waitsem(m->idconds, idcond);
+
     waitsem(m->mutex, 0);
 }
 
-void signal_condition(Monitor* m, int id_var)
+void signal_condition(Monitor* m, int idcond)
 {
-    if(m->condcounts[id_var] > 0){
-        m->condcounts[id_var]--;
-        signalsem(m->idconds, id_var);
+    if(m->condcounts[idcond] > 0){
+        m->condcounts[idcond]--;
+        signalsem(m->idconds, idcond);
     }
 }
 
-int queue_condition(Monitor* m, int id_var)
+int queue_condition(Monitor* m, int idcond)
 {
-    return m->condcounts[id_var];
+    return m->condcounts[idcond];
 }
 
 void waitsem(int idsem, int numsem)
@@ -78,10 +80,10 @@ void signalsem(int idsem, int numsem)
 {
     struct sembuf buf;
 
-       buf.sem_num = numsem;
-       buf.sem_flg = 0;
-       buf.sem_op = 1;
-       semop(idsem, &buf, 1); 
+    buf.sem_num = numsem;
+    buf.sem_flg = 0;
+    buf.sem_op = 1;
+    semop(idsem, &buf, 1); 
 }
 
 

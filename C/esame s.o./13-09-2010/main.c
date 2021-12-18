@@ -50,19 +50,6 @@ int main()
         }
         exit(0);
     }
-    
-
-    if(pid == 0){
-        for (int i = 0; i < NUM_PROCC; i++){
-            for (int j = 0; j < NUM_ACC; j++){
-                int val = getpid();
-                inserisci(buf, nscorte, val);
-                printf("Prodotto %d\n", val);
-            }
-            exit(0);
-        }
-    }
-
 
     pid = fork();
 

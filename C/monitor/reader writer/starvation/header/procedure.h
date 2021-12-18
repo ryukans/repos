@@ -5,22 +5,24 @@
 #include <stdio.h>
 #include "../header/monitor_signal_continue.h"
 
-enum varcond{
-    VAR_COND_READER,
-    VAR_COND_WRITER
-};
+enum varconds{VAR_COND_READER, VAR_COND_WRITER};
 
 typedef int T;
+
 typedef struct reader_writer{
     T buffer;
 
-    int nreader;
-    int nwriter;
+    int nreaders;
+    int nwriters;
 
     Monitor monitor;
 }Buffer;
 
-int read(Buffer*);
-void writer(Buffer*, T value);
+void startr(Buffer*);
+T	 read(Buffer*);
+void endr(Buffer*);
+void startw(Buffer*);
+void write(Buffer*, T value);
+void endw(Buffer*);
 
 #endif

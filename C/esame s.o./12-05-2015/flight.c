@@ -89,7 +89,7 @@ void rem_flight(Buffer* buf, int id)
     buf->status[index] = FREE;
     buf->nfree++;
 
-    pthread_cond_signal(MONITOR.cvinsert);
+    //pthread_cond_signal(MONITOR.cvinsert);
 
     pthread_mutex_unlock(MONITOR.mutex);
 }
@@ -114,14 +114,14 @@ void upd_flight(Buffer* buf, int id, int quote)
 
     sleep(sleeptime);
 
-    buf->flights[index].id = id;
+    //buf->flights[index].id = id;
     buf->flights[index].quote = quote;
 
     pthread_mutex_lock(MONITOR.mutex);
 
     buf->status[index] = OCCUPIED;
 
-    pthread_cond_signal(MONITOR.cvremove);
+    //pthread_cond_signal(MONITOR.cvremove);
 
     pthread_mutex_unlock(MONITOR.mutex);
 }

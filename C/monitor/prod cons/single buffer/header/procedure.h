@@ -15,8 +15,8 @@ typedef struct prod_cons{
 } Buffer;
 
 
-void produce(Buffer*, int val);
-int consume(Buffer*);
+void produce(Buffer*, T val);
+T consume(Buffer*);
 
 
 #endif

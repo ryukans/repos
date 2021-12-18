@@ -12,18 +12,18 @@ typedef struct {
     int mutex;
 
     int idconds; //sem ids
-    int varconds;
+    int nconds;
 
-    int idshmem; //shared mem id
+    int idshmconds; //shared mem id for array
     int* condcounts; //array condition counts
 } Monitor;
 
-void init_monitor(Monitor*, int n_var);
+void init_monitor(Monitor*, int nconds);
 void enter_monitor(Monitor*);
 void leave_monitor(Monitor*);
 void remove_monitor(Monitor*);
-void wait_condition(Monitor*, int id_var);
-void signal_condition(Monitor*, int id_var);
-int queue_condition(Monitor*, int id_var);
+void wait_condition(Monitor*, int idcond);
+void signal_condition(Monitor*, int idcond);
+int queue_condition(Monitor*, int idcond);
 
 #endif

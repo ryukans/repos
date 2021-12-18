@@ -23,10 +23,10 @@ int main(){
 	key_t key_shm = ftok(".",'a');
 	key_t key_sem = ftok(".",'b');
 	
-	shmid = shmget(key_shm, sizeof(BufferCircolare), IPC_CREAT | 0664)
-	semid = semget(key_sem, N_SEM,IPC_CREAT | 0664)
+	shmid = shmget(key_shm, sizeof(BufferCircolare), IPC_CREAT | 0664);
+	semid = semget(key_sem, N_SEM, IPC_CREAT | 0664);
 	
-	buff = (BufferCircolare*) shmat(shmdid,0,0);
+	buff = (BufferCircolare*) shmat(shmid,0,0);
 	
 	produci_elemento(semid, buff);
 	

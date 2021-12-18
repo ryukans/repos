@@ -7,8 +7,8 @@ int main()
     srand(time(NULL));
 
     key_t keyshm = ftok(".", 'a');
-    int shmid = shmget(keyshm, sizeof(buffer), IPC_CREAT | 0664);
-    buffer* buf;
+    int shmid = shmget(keyshm, sizeof(Buffer), IPC_CREAT | 0664);
+    Buffer* buf;
     buf->index = 0;
     buf->riemp = (11+rand()%(SIZE+1));
     
@@ -18,7 +18,7 @@ int main()
     semctl(semid, SYNCH, SETVAL, 1);
 
 
-    int nscrittori = 1
+    int nscrittori = 1;
     int nlettori = 2;
     int nprocessi = nlettori + nscrittori;
 

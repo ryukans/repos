@@ -17,8 +17,7 @@ void inserisci(buffer* buf, int* nscorte, int val)
         ++i;
 
     buf->magazzino[i].stato = IN_USO;
-    buf->count--;
-
+    
     monitor_mutex_unlock(&buf->m);
 
     sleep(2);

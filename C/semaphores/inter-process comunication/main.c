@@ -61,7 +61,7 @@ int main()
                 
                 int tmp = *shmptr;
                 printf("Process %d has read\n", i);
-                sleep(1); //optional, it makes the exection slower in order to emphasize the race condition between the two processes on the variable -tmp-
+                sleep(1); //optional, it makes the execution slower in order to emphasize the race condition between the two processes on the variable -tmp-
                 //(*shmptr)++;
                 *shmptr = tmp+1;
                 printf("Process %d has incremented\n", i);

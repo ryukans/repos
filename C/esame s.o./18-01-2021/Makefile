@@ -7,7 +7,7 @@ client: client.c
 	gcc -o client client.c
 
 server: server.c
-	gcc -o server server.c -lpthread
+	gcc -o server server.c -pthread
 
 clean:
 	rm -f main client server

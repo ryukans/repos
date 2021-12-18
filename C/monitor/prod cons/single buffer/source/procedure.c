@@ -16,7 +16,7 @@ void produce(Buffer* buf, T val)
     leave_monitor(&(buf->monitor));
 }
 
-int consume(Buffer* buf)
+T consume(Buffer* buf)
 {
     T val;
     
