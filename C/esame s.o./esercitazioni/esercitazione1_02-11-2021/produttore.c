@@ -8,27 +8,28 @@
 #include <sys/wait.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <time.h>
 #include "header.h"
 
 
 int main(){
 	printf("[PRODUTTORE] <%d> \n",getpid());
 	
-	int shmid, semid;
+	int shmkey, shmid;	
+	int semkey, semid;
+	Buffer* buf;
 	
 	srand(time(NULL));
 	
-	BufferCircolare* buff;
+	shmkey = ftok(PATHNAME, SHMID);
+	shmid = shmget(shmkey, sizeof(Buffer), IPC_CREAT | 0664);
 	
-	key_t key_shm = ftok(".",'a');
-	key_t key_sem = ftok(".",'b');
+	semkey = ftok(PATHNAME, SEMID);
+	semid = semget(semkey, 0, 0);
 	
-	shmid = shmget(key_shm, sizeof(BufferCircolare), IPC_CREAT | 0664);
-	semid = semget(key_sem, N_SEM, IPC_CREAT | 0664);
+	buf = (Buffer*)shmat(shmid, NULL, 0);
 	
-	buff = (BufferCircolare*) shmat(shmid,0,0);
-	
-	produci_elemento(semid, buff);
+	produci_elemento(semid, buf);
 	
 	return 1;
 }
