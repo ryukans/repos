@@ -5,31 +5,51 @@ void server(int msgq_guest, int msgq_print)
 {
 	int i;
 	
-	/* TODO Definizione Messaggio da ricevere dal proc. client */
-    mex_client m;
+	clientbuf msg_c;
 
-	/* TODO Definizione Messaggio da inviare al proc. printer */
-    mex_server mbuf;
+	serverbuf msg_s;
 
+	msg_c.type = CLIENT_T;
+	msg_s.type = PRINTER_T;
 	printf("[server ] Server ready...\n");
-	while(1){
-		for(i=0; i<BUFFER_DIM; i++){
-			/*TODO Ricezione del messaggio di richiesta*/
-            msgrcv(msgq_guest, (void*)&m, MSGSZ(mex_client), QUEUE_REQ, 0);
-			
-			/*TODO se il messaggio è di tipo fine, inserisce -1 in posizione i-ma e termina*/
-            if(m.type == EXIT_REQ){
-                mbuf.pids[i] = -1;
-                i = BUFFER_DIM;
-            }
-            /*TODO Accodamento della richiesta nel buffer */
-            else
-                mbuf.pids[i++] = m.pid;
+	
+	/*
+	do{
+		for(i = 0; i < BUFFER_DIM && msg_c.type != EXIT_T; i++){
+			msgrcv(msgq_guest, &msg_c, sizeof(clientbuf)-sizeof(long), 0, 0);
+			msg_c.type == EXIT_T ? msg_s.mess[i] = -1 : msg_s.mess[i] = msg_c.mess;
 		}
-		
-	    /*TODO Invio del messaggio con il buffer completo al proc. printer */
-        mbuf.type = PRINT_REQ;
-		msgsnd(msgq_print, (void*)&mbuf, MSGSZ(mex_server), IPC_NOWAIT);
-        exit(0);
+		msgsnd(msgq_print, &msg_s, sizeof(serverbuf)-sizeof(long), 0);
+	}while(msg_c.type != EXIT_T);
+	_exit(0);*/
+	
+	while(msg_c.type != EXIT_T){
+		for(i = 0; (i < BUFFER_DIM) && (msg_c.type != EXIT_T); i++)
+		{
+			msgrcv(msgq_guest, &msg_c, sizeof(clientbuf)-sizeof(long), 0, 0);
+			msg_s.mess[i] = msg_c.type == EXIT_T ? -1 : msg_c.mess;
+		}
+		msgsnd(msgq_print, &msg_s, sizeof(serverbuf)-sizeof(long), 0);
+		printf("[server] - message sent to printer\n");
 	}
+	_exit(0);
+	
+	/*
+	while(1){
+		for(i = 0; i < BUFFER_DIM; i++){
+			msgrcv(msgq_guest, &msg_c, sizeof(clientbuf)-sizeof(long), 0, 0);
+			if(msg_c.type==EXIT_T){
+				msg_s.mess[i] = -1;
+				msgsnd(msgq_print, &msg_s, sizeof(serverbuf)-sizeof(long), 0);
+				printf("[Server] Goodbye...\n");
+				_exit(0);
+			}
+			msg_s.mess[i] = msg_c.mess;
+		}
+		msgsnd(msgq_print, &msg_s, sizeof(serverbuf)-sizeof(long), 0);
+	}
+	*/
 }
+
+
+
