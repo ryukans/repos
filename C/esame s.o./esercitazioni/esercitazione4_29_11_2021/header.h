@@ -21,25 +21,24 @@ typedef struct {
         
     /* TODO: Definire il messaggio */
     long type;
-    char string[STRING_MAX_DIM];
-    int intarray[INT_MAX_DIM];
+    char stringa[STRING_MAX_DIM];
+    int array[INT_MAX_DIM];
     int var;
 
 } message;
 
-typedef struct ProdConsGen {
+struct ProdConsGen {
     
     /* TODO: Definire le variabili per la sincronizzazione dei processi generatori prod/cons */
-    message msg[DIM_QUEUE]; //coda di messaggi
-    int testa;
-    int coda;
-    int count;
-    Monitor monitor;
+	message msg[DIM_QUEUE];
+	int testa;
+	int coda;
+	int count;
+	Monitor m;
+};
 
-} Buffer;
-
-void generatore_produttore(Buffer *);
-void generatore_consumatore(Buffer *,  int);
+void generatore_produttore(struct ProdConsGen *);
+void generatore_consumatore(struct ProdConsGen *,  int);
 
 void filtro(int, int);
 void checksum(int , int);

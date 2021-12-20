@@ -13,27 +13,20 @@
 
 #include "header.h"
 
-int main()
-{
+int main(){
 
         pid_t pid;
         int ds_queue_gen_filter, ds_queue_filter_checksum, ds_queue_checksum_visual;
         int total_process = NUM_GENERATORS + NUM_FILTER + NUM_CHECKSUM + NUM_VISUAL;
 
         //create queues
-        /* chiave coda generatore-filtro */
         int key_queue_gen_filter = IPC_PRIVATE;
-        /* definire chiave coda filtro-checksum */
         int key_queue_filter_checksum = IPC_PRIVATE;
-        /* definire chiave coda checksum-visualizzatore */
-        int key_queue_checksum_visual = IPC_PRIVATE; 
+        int key_queue_checksum_visual = IPC_PRIVATE;
 
-        /* descrittore coda generatore-filtro */
         ds_queue_gen_filter = msgget(key_queue_gen_filter, IPC_CREAT | 0664);
-        /* descrittore coda filtro-checksum */
-        ds_queue_filter_checksum = msgget(ds_queue_filter_checksum, IPC_CREAT | 0664);;
-         /* descrittore coda checksum-visualizzatore */
-        ds_queue_checksum_visual = msgget(ds_queue_checksum_visual, IPC_CREAT | 0664);
+        ds_queue_filter_checksum =  msgget(key_queue_filter_checksum, IPC_CREAT | 0664);
+        ds_queue_checksum_visual =  msgget(key_queue_checksum_visual, IPC_CREAT | 0664);
         
         printf("[master] Code create...\n");
         printf("[master] ...........ds_queue_gen_filter: %d\n", ds_queue_gen_filter);
@@ -42,22 +35,18 @@ int main()
 
         /* creazione shm per prod-cons generatori */
     
-        /* chiave shared memory per prod/cons generatori*/
         key_t shm_key = IPC_PRIVATE;
-        /* descrittore della shared memory per prod/cons generatori*/
-        int ds_shm = shmget(shm_key, sizeof(Buffer), IPC_CREAT | 0664); 
+
+        int ds_shm = shmget(shm_key, sizeof(struct ProdConsGen), IPC_CREAT | 0664);
 
         if(ds_shm<0) { perror("SHM errore"); exit(1); }
 
-        /*riferimento per il segmento di shm */
-        Buffer* pc = (Buffer*) shmat(ds_shm, NULL, 0);
-
-        if(pc == (void*)-1) { perror("SHM attach error\n"); exit(1); }
-
+        /* TODO: ottenere il riferimento per il segmento di shm */
+        struct ProdConsGen* pc = (struct ProdConsGen*)shmat(ds_shm, NULL, 0);
 
         /* TODO: inizializzare variabili utilizzate per la sincronizzazione generatori */
-        init_monitor(&(pc->monitor), 2); // due monitor, per var cons consum e var cons prod
-        pc->coda = pc->testa = pc->count = 0;
+        init_monitor(&pc->m, 2);
+        pc->testa = pc->coda = pc->count = 0;
     
         int i;
 
@@ -113,12 +102,12 @@ int main()
         }
 
         /* TODO: deallocare risorse (code, shm, monitor) */
-        msgctl(ds_queue_gen_filter, IPC_RMID, NULL);
-        msgctl(ds_queue_filter_checksum, IPC_RMID, NULL);
-        msgctl(ds_queue_checksum_visual, IPC_RMID, NULL);
-        shmctl(ds_shm, IPC_RMID, NULL);
-        remove_monitor(&(pc->monitor));
-
+ 		remove_monitor(&pc->m);
+ 		shmctl(ds_shm, IPC_RMID, NULL);
+ 		msgctl(ds_queue_gen_filter, IPC_RMID, NULL);
+ 		msgctl(key_queue_filter_checksum, IPC_RMID, NULL);
+ 		msgctl(ds_queue_checksum_visual, IPC_RMID, NULL);
+ 		
         printf("[master] Rimozione code OK!\n");
         printf("[master] Rimozione monitor OK!\n");
     
