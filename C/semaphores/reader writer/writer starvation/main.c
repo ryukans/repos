@@ -22,8 +22,8 @@ int main()
 
     sem.key = IPC_PRIVATE;
     sem.id = semget(sem.key, NSEMS, IPC_CREAT | 0664);
-    semctl(sem, MUTEXR, SETVAL, 1);
-    semctl(sem, SYNCHRW, SETVAL, 1);
+    semctl(sem.id, MUTEXR, SETVAL, 1);
+    semctl(sem.id, SYNCHRW, SETVAL, 1);
 
     nreaders = nwriters = 6;
     nproc = nreaders+nwriters;

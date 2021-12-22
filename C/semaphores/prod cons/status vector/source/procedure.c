@@ -21,7 +21,7 @@ void produce(buffer* buf, value srcval, int semid)
     signalsem(semid, VALUE_AVAIL);
 }
 
-value consumer(buffer* buf, int semid)
+value consume(buffer* buf, int semid)
 {
     waitsem(semid, VALUE_AVAIL);
 
@@ -42,7 +42,7 @@ value consumer(buffer* buf, int semid)
     signalsem(semid, SPACE_AVAIL);
 }
 
-void consumer(buffer* buf, value* srcval, int semid)
+void consumep(buffer* buf, value* srcval, int semid)
 {
     waitsem(semid, MUTEX_C);
     
