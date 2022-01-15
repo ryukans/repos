@@ -52,7 +52,7 @@ void generatore_consumatore(struct ProdConsGen *pc, int ds_queue_gen_filter){
     /* TODO: utilizzare il costrutto monitor per la consumazione del messaggio e l'invio verso il processo filter */
     enter_monitor(&pc->m);
     
-    if(pc->count == 0)
+    while(pc->count == 0)
     	wait_condition(&pc->m, VARCOND_GEN_CONSUMATORI);
     
     printf("[generatore_consumatore] Messaggio CONSUMATO!\n");
