@@ -17,7 +17,7 @@ void generatore_produttore(struct ProdConsGen *pc)
     /* TODO: utilizzare il costrutto monitor per la produzione del messaggio */
     enter_monitor(&pc->m);
     
-    if(pc->count == DIM_QUEUE)
+    while(pc->count == DIM_QUEUE)
     	wait_condition(&pc->m, VARCOND_GEN_PRODUTTORI);
     	
     pc->msg[pc->testa].type = MSG_TYPE;
