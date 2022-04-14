@@ -1,0 +1,21 @@
+﻿  rand_string.c
+c:\users\claudio pisa\desktop\develop\c\samples\rand string_\src\io_utilities.h(64): warning C4101: 'randchar': unreferenced local variable
+c:\users\claudio pisa\desktop\develop\c\samples\rand string_\src\io_utilities.h(103): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\claudio pisa\desktop\develop\c\samples\rand string_\src\io_utilities.h(123): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\claudio pisa\desktop\develop\c\samples\rand string_\src\io_utilities.h(150): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\claudio pisa\desktop\develop\c\samples\rand string_\src\io_utilities.h(182): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\claudio pisa\desktop\develop\c\samples\rand string_\src\io_utilities.h(226): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
+c:\users\claudio pisa\desktop\develop\c\samples\rand string_\src\io_utilities.h(228): warning C4013: 'getch' undefined; assuming extern returning int
+c:\users\claudio pisa\desktop\develop\c\samples\rand string_\src\io_utilities.h(231): warning C4047: '==': 'int' differs in levels of indirection from 'void *'
+c:\users\claudio pisa\desktop\develop\c\samples\rand string_\src\io_utilities.h(233): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
+c:\users\claudio pisa\desktop\develop\c\samples\rand string_\src\io_utilities.h(238): warning C4047: '==': 'int' differs in levels of indirection from 'void *'
+c:\users\claudio pisa\desktop\develop\c\samples\rand string_\src\rand_string.c(19): warning C4101: 'string': unreferenced local variable
+c:\users\claudio pisa\desktop\develop\c\samples\rand string_\src\rand_string.c(20): warning C4101: 'stringsize': unreferenced local variable
+c:\users\claudio pisa\desktop\develop\c\samples\rand string_\src\rand_string.c(18): warning C4101: 'casetype': unreferenced local variable
+c:\users\claudio pisa\desktop\develop\c\samples\rand string_\src\rand_string.c(20): warning C4101: 'strings': unreferenced local variable
+  Rand String.vcxproj -> C:\Users\Claudio Pisa\Desktop\Develop\C\Samples\Rand String\Rand String\Debug\Rand String.exe
+  Rand String.vcxproj -> C:\Users\Claudio Pisa\Desktop\Develop\C\Samples\Rand String\Rand String\Debug\Rand String.pdb (Partial PDB)

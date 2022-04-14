@@ -1,0 +1,9 @@
+﻿  Exercise 3-5.c
+c:\users\claudio pisa\desktop\develop\c\samples\exercise 3-5\exercise 3-5\exercise 3-5.c(17): warning C4013: 'srand' undefined; assuming extern returning int
+c:\users\claudio pisa\desktop\develop\c\samples\exercise 3-5\exercise 3-5\exercise 3-5.c(17): warning C4013: 'time' undefined; assuming extern returning int
+c:\users\claudio pisa\desktop\develop\c\samples\exercise 3-5\exercise 3-5\exercise 3-5.c(19): warning C4013: 'rand' undefined; assuming extern returning int
+c:\users\claudio pisa\desktop\develop\c\samples\exercise 3-5\exercise 3-5\exercise 3-5.c(24): warning C4013: 'getch' undefined; assuming extern returning int
+c:\users\claudio pisa\desktop\develop\c\samples\exercise 3-5\exercise 3-5\exercise 3-5.c(47): warning C4996: 'strrev': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strrev. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(579): note: see declaration of 'strrev'
+  Exercise 3-5.vcxproj -> C:\Users\Claudio Pisa\Desktop\Develop\C\Samples\Exercise 3-5\Debug\Exercise 3-5.exe
+  Exercise 3-5.vcxproj -> C:\Users\Claudio Pisa\Desktop\Develop\C\Samples\Exercise 3-5\Debug\Exercise 3-5.pdb (Partial PDB)

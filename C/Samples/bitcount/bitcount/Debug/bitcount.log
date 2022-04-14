@@ -1,0 +1,4 @@
+﻿  main.c
+c:\users\claudio pisa\desktop\develop\c\samples\bitcount\bitcount\main.c(8): warning C4013: 'getch' undefined; assuming extern returning int
+  bitcount.vcxproj -> C:\Users\Claudio Pisa\Desktop\Develop\C\Samples\bitcount\Debug\bitcount.exe
+  bitcount.vcxproj -> C:\Users\Claudio Pisa\Desktop\Develop\C\Samples\bitcount\Debug\bitcount.pdb (Partial PDB)

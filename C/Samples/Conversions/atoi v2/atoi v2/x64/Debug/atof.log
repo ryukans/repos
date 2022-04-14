@@ -1,0 +1,7 @@
+﻿  atoi.c
+c:\users\claudio pisa\desktop\develop\c\samples\conversions\atof\atof\atoi.c(6): warning C4028: formal parameter 1 different from declaration
+c:\users\claudio pisa\desktop\develop\c\samples\conversions\atof\atof\atoi.c(6): warning C4273: 'atoi': inconsistent dll linkage
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdlib.h(446): note: see previous definition of 'atoi'
+     Creating library C:\Users\Claudio Pisa\Desktop\Develop\C\Samples\Conversions\atof\x64\Debug\atoi v2.lib and object C:\Users\Claudio Pisa\Desktop\Develop\C\Samples\Conversions\atof\x64\Debug\atoi v2.exp
+  atof.vcxproj -> C:\Users\Claudio Pisa\Desktop\Develop\C\Samples\Conversions\atof\x64\Debug\atoi v2.exe
+  atof.vcxproj -> C:\Users\Claudio Pisa\Desktop\Develop\C\Samples\Conversions\atof\x64\Debug\atoi v2.pdb (Partial PDB)
