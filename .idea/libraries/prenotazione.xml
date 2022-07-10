@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="prenotazione">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/C/semaphores/prod cons/prenotazione.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
