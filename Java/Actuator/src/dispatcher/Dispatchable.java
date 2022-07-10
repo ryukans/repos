@@ -1,4 +1,8 @@
 package dispatcher;
 
-public interface Dispatchable {
+public interface Dispatchable
+{
+    void sendCmd(int command);
+    int getCmd();
+
 }

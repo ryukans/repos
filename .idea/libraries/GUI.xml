@@ -2,9 +2,9 @@
   <library name="GUI">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/Java/GUI/jgoodies-forms-1.8.0-sources.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Java/GUI/jgoodies-forms-1.8.0.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Java/GUI/jgoodies-common-1.8.0.jar!/" />
       <root url="jar://$PROJECT_DIR$/Java/GUI/jgoodies-common-1.8.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Java/GUI/jgoodies-common-1.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Java/GUI/jgoodies-forms-1.8.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
