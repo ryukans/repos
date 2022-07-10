@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ese">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/C/semaphores/reader writer/ese.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
