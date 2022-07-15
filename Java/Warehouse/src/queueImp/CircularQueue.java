@@ -20,6 +20,12 @@ public class CircularQueue implements Queue
     @Override
     public void push(int element)
     {
+        try{
+            Thread.sleep(101 + (int)(Math.random()*100)  ); //sleep di durata random max pari a 200ms
+        }catch ( InterruptedException e ){
+            e.printStackTrace();
+        }
+
         queue[tail] = element;
 
         tail = (tail+1)%size;
@@ -29,6 +35,12 @@ public class CircularQueue implements Queue
     @Override
     public int pop()
     {
+        try{
+            Thread.sleep(101 + (int)(Math.random()*100)  ); //sleep di durata random max pari a 200ms
+        }catch ( InterruptedException e ){
+            e.printStackTrace();
+        }
+
         int element = queue[head];
 
         head = (head+1)%size;

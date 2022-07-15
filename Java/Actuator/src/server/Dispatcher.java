@@ -50,7 +50,6 @@ public class Dispatcher extends DispatcherSkeleton
         }
 
         command = commands.get(head);
-        //commands.remove(head);
         head = (head+1)%MAXSIZE;
         count--;
         System.out.println("Command " + command + " read");

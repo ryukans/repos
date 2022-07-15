@@ -31,13 +31,9 @@ public class Skeleton extends Thread
             int id = in.readInt();
 
             switch(op.toLowerCase()){
-                case "deposit" -> {
-                    //System.out.println("");
-                    warehouse.deposit(item, id);
-                }
-                case "withdraw" -> {
-                    warehouse.withdraw(item);
-                }
+                case "deposit" -> warehouse.deposit(item, id);
+                case "withdraw" -> System.out.println("Item id: " + warehouse.withdraw(item));
+                default -> System.out.println("Operation <"+ op + "> is not valid");
             }
 
             out.close();

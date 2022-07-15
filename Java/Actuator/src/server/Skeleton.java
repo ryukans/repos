@@ -28,12 +28,12 @@ public class Skeleton extends Thread
             System.out.println("Operation: " + op);
 
             switch(op.toLowerCase()){
-                case "sendcmd": {
+                case "sendcmd" -> {
                     int command = in.readInt();
                     dispatcher.sendCmd(command);
                     out.writeUTF("ack");
                 }
-                case "getcmd": {
+                case "getcmd" -> {
                     int command = dispatcher.getCmd();
                     out.writeInt(command);
                 }

@@ -28,7 +28,6 @@ public class GestoreSportello
         boolean servita = false;
         while(i < this.sportelli.size() && !servita)
             servita = this.sportelli.get(i++).serviRichiesta(idClient);
-
     }
 
     @Override

@@ -4,13 +4,14 @@ import interfaces.Warehouse;
 import queue.*;
 import queueImp.*;
 
-public class TechWarehouse implements Warehouse
+public class TechWarehouse extends ServerSkeleton
 {
     private Queue laptops;
     private Queue smartphones;
 
-    public TechWarehouse()
+    public TechWarehouse(int port)
     {
+        super(port);
         laptops = new CircularQueueMutex(new CircularQueue(5));
         smartphones = new CircularQueueMutex(new CircularQueue(5));
     }
@@ -22,6 +23,7 @@ public class TechWarehouse implements Warehouse
             case "laptop" -> laptops.push(id);
             case "smartphone" -> smartphones.push(id);
         }
+        System.out.printf("Item <%s, %d> has been deposited on warehouse\n", item, id);
     }
 
     @Override
@@ -33,6 +35,7 @@ public class TechWarehouse implements Warehouse
             case "laptop" -> id = laptops.pop();
             case "smartphone" -> id = smartphones.pop();
         }
+        System.out.printf("Item <%s, %d> has been withdrawn from warehouse\n", item, id);
 
         return id;
     }

@@ -8,19 +8,16 @@ import java.net.Socket;
 
 public abstract class CounterSkeleton implements ICounter
 {
-
-    ServerSocket serverSocket = null;
-    Socket socket = null;
-
     public void runSkeleton()
     {
+        ServerSocket serverSocket = null;
         try{
            serverSocket = new ServerSocket(2500);
            System.out.println("Server open on 2500");
 
            while(true){
-               this.socket = serverSocket.accept();
-               SkeletonThread st = new SkeletonThread(this.socket, this);
+               Socket socket = serverSocket.accept();
+               SkeletonThread st = new SkeletonThread(socket, this);
                st.start();
            }
         }

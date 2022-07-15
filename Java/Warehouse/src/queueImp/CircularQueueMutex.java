@@ -11,15 +11,15 @@ import java.util.concurrent.locks.ReentrantLock;
 public class CircularQueueMutex extends QueueWrapper
 {
     private Lock mutex;
-    private Condition empty;
-    private Condition full;
+    private Condition producer;
+    private Condition consumer;
 
     public CircularQueueMutex(Queue queue)
     {
         super(queue);
         mutex = new ReentrantLock();
-        empty = mutex.newCondition();
-        full = mutex.newCondition();
+        producer = mutex.newCondition();
+        consumer = mutex.newCondition();
 
     }
 
@@ -29,17 +29,15 @@ public class CircularQueueMutex extends QueueWrapper
         mutex.lock();
 
         try{
-           while(super.queue.isFull()){
+           while(queue.isFull()){
                System.out.println("Queue is full; on wait");
-               try{
-                   empty.await();
-               }
-               catch(InterruptedException e){
-                   throw new RuntimeException(e);
-               }
+               producer.await();
            }
-           super.queue.push(element);
-           full.signal();
+           queue.push(element);
+           consumer.signal();
+        }
+        catch(InterruptedException e){
+            throw new RuntimeException(e);
         }
         finally{
             mutex.unlock();
@@ -54,17 +52,15 @@ public class CircularQueueMutex extends QueueWrapper
         mutex.lock();
 
         try{
-           while(super.queue.isEmpty()){
+           while(queue.isEmpty()){
                System.out.println("Queue is empty; on wait");
-               try {
-                   full.await();
-               }
-               catch(InterruptedException e){
-                   throw new RuntimeException(e);
-               }
+               consumer.await();
            }
-           element = super.queue.pop();
-           empty.signal();
+           element = queue.pop();
+           producer.signal();
+        }
+        catch(InterruptedException e){
+            throw new RuntimeException(e);
         }
         finally{
             mutex.unlock();

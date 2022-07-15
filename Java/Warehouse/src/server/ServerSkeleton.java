@@ -1,10 +1,12 @@
 package server;
 
+import interfaces.Warehouse;
+
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class ServerSkeleton extends TechWarehouse
+public abstract class ServerSkeleton implements Warehouse
 {
     private int port;
 
@@ -19,8 +21,8 @@ public class ServerSkeleton extends TechWarehouse
             Socket socket = null;
             while(true){
                socket = serverSocket.accept();
-
                Skeleton worker = new Skeleton(socket, this);
+               worker.start();
             }
         }
         catch(IOException e){

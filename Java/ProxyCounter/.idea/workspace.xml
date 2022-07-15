@@ -5,31 +5,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a3e447b-1d1f-4a69-a76e-86e2e53c7c5e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/repos.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Actuator/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Actuator/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Actuator/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GestioneSportelli/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GestioneSportelli/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GestioneSportelli/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GestioneSportelli/GestioneSportelli.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProdCons/ProdCons.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProxyCounter.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinterHandler/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinterHandler/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinterHandler/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinterHandler/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinterHandler/RemotePrinterHandler.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GUITests/GUITests.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloWorld/HelloWorld.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Inner class/Inner class.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../databaseTest/databaseTest.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../interfaceExample/interfaceExample.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GestoreStampanti/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GestoreStampanti/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GestoreStampanti/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GestoreStampanti/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GestoreStampanti/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GestoreStampanti/GestoreStampanti.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GestoreStampanti/src/client/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GestoreStampanti/src/client/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GestoreStampanti/src/interfaces/dispatcher/IDispatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GestoreStampanti/src/interfaces/printer/IPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GestoreStampanti/src/printer/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GestoreStampanti/src/printer/PrinterSkeleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GestoreStampanti/src/printer/Skeleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GestoreStampanti/src/server/Dispatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GestoreStampanti/src/server/PrinterProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GestoreStampanti/src/server/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Magazzino/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Magazzino/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Magazzino/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Magazzino/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Magazzino/Magazzino.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Magazzino/src/client/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Magazzino/src/client/ClientListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Magazzino/src/client/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Magazzino/src/client/Sender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Magazzino/src/interfaccia/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Magazzino/src/proxy/Proxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Magazzino/src/proxy/ProxyListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Magazzino/src/proxy/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Magazzino/src/proxy/Sender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Magazzino/src/server/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Magazzino/src/server/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse/out/production/Warehouse/client/ClientA.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse/out/production/Warehouse/client/ClientB.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse/out/production/Warehouse/client/Proxy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse/out/production/Warehouse/client/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse/out/production/Warehouse/interfaces/Warehouse$Operation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse/out/production/Warehouse/interfaces/Warehouse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse/out/production/Warehouse/queue/Queue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse/out/production/Warehouse/queue/QueueWrapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse/out/production/Warehouse/queueImp/CircularQueue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse/out/production/Warehouse/queueImp/CircularQueueMutex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse/out/production/Warehouse/server/Server.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse/out/production/Warehouse/server/ServerSkeleton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse/out/production/Warehouse/server/Skeleton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse/out/production/Warehouse/server/TechWarehouse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse/src/client/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Actuator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/src/server/Dispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Actuator/src/server/Dispatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/src/server/Skeleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Actuator/src/server/Skeleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GestioneSportelli/src/server/GestoreSportello.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GestioneSportelli/src/server/GestoreSportello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/CounterSkeleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/CounterSkeleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Warehouse/src/client/ClientA.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Warehouse/src/client/ClientA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Warehouse/src/client/ClientB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Warehouse/src/client/ClientB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Warehouse/src/client/Proxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Warehouse/src/client/Proxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Warehouse/src/interfaces/Warehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Warehouse/src/interfaces/Warehouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Warehouse/src/queueImp/CircularQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Warehouse/src/queueImp/CircularQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Warehouse/src/queueImp/CircularQueueMutex.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Warehouse/src/queueImp/CircularQueueMutex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Warehouse/src/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Warehouse/src/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Warehouse/src/server/ServerSkeleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Warehouse/src/server/ServerSkeleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Warehouse/src/server/Skeleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Warehouse/src/server/Skeleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Warehouse/src/server/TechWarehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Warehouse/src/server/TechWarehouse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +77,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2BhNcPKoyrUZxNflvNarq7EgYie" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -49,7 +91,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/claudio/repos/Java/ProxyCounter"
+    "last_opened_file_path": "C:/Users/claudio/repos/Java/ProxySkeletonAttuatore"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
