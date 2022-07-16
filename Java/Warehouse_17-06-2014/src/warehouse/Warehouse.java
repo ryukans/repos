@@ -4,5 +4,5 @@ import java.rmi.Remote;
 
 public interface Warehouse extends Remote
 {
-    void deposit
+    void deposit();
 }
