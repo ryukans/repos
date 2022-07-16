@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="baa46aba-ce1d-4d1f-9233-9b14356d729e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlertNotification.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteStorageSystem/out/logs.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/.idea/RemoteWhiteboard.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/RemoteWhiteboard/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/RemoteWhiteboard/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/RemoteWhiteboard/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/RemoteWhiteboard/bin/client/ObserverImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/RemoteWhiteboard/bin/client/Square.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/RemoteWhiteboard/bin/client/Triangle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/RemoteWhiteboard/bin/client/WhiteboardClient1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/RemoteWhiteboard/bin/client/WhiteboardClient2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/RemoteWhiteboard/bin/server/WhiteboardImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/RemoteWhiteboard/bin/server/WhiteboardServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/RemoteWhiteboard/bin/whiteboard/Observer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/RemoteWhiteboard/bin/whiteboard/Shape.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/RemoteWhiteboard/bin/whiteboard/Whiteboard.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/RemoteWhiteboard/src/client/ObserverImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/RemoteWhiteboard/src/client/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/RemoteWhiteboard/src/client/Triangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/RemoteWhiteboard/src/client/WhiteboardClient1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/RemoteWhiteboard/src/client/WhiteboardClient2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/RemoteWhiteboard/src/server/WhiteboardImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/RemoteWhiteboard/src/server/WhiteboardServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/RemoteWhiteboard/src/whiteboard/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/RemoteWhiteboard/src/whiteboard/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemoteWhiteboard/RemoteWhiteboard/src/whiteboard/Whiteboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/SensorReader.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/out/client/Generator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/out/client/Observer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/out/dispatcher/Dispatcher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/out/dispatcher/Reading.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/out/interfaces/Dispatchable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/out/interfaces/Observable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/out/interfaces/Readable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/out/log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/out/server/Server.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/src/client/Generator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/src/client/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/src/dispatcher/Dispatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/src/dispatcher/Reading.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/src/interfaces/Dispatchable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/src/interfaces/Observable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/src/interfaces/Readable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/src/server/Server.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2BzsQKYf8lSyzFFQ9kR3s2L5NfC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="baa46aba-ce1d-4d1f-9233-9b14356d729e" name="Changes" comment="" />
+      <created>1657920233719</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657920233719</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
