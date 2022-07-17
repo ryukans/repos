@@ -5,25 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3d9e3bc-d30b-4f7b-a4f3-bda17a8bbb21" name="Changes" comment="Traccia esame Notification">
-      <change afterPath="$PROJECT_DIR$/out/client/Client.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/dispatcher/Dispatcher.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/dispatcher/DispatcherListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/printer/Printer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/server/RemotePrinter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/server/Server.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dispatcher/Dispatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dispatcher/DispatcherListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/printer/Printer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/RemotePrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/out/client/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/out/client/Producer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/out/queue/adt/Queue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/out/queue/buffer/CircularQueue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/out/queue/monitor/QueueMonitor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/out/queue/wrapper/QueueWrapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/out/server/RemoteWarehouse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/out/server/Server.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/out/warehouse/Warehouse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/src/client/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/src/client/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/src/queue/adt/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/src/queue/buffer/CircularQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/src/queue/monitor/QueueMonitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/src/queue/wrapper/QueueWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/src/server/RemoteWarehouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/src/server/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RemotePrinter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RemotePrinter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Warehouse_17-06-2014/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Warehouse_17-06-2014/Warehouse_17-06-2014.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/Warehouse_17-06-2014.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Warehouse_17-06-2014/src/warehouse/Warehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/src/warehouse/Warehouse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +57,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/claudio/repos/Java/apache-activemq-5.16.5/activemq-all-5.16.5.jar",
+    "last_opened_file_path": "C:/Users/claudio/repos/Java/RemotePrinter",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"

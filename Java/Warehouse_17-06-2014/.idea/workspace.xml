@@ -4,34 +4,96 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="313c591a-7f13-4925-975d-1ff0b90eb96a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter/out/client/Client.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter/out/dispatcher/Dispatcher.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter/out/dispatcher/DispatcherListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter/out/log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter/out/printer/Printer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter/out/server/RemotePrinter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter/out/server/Server.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter/src/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter/src/dispatcher/Dispatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter/src/dispatcher/DispatcherListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter/src/printer/Printer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter/src/server/RemotePrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter/src/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="313c591a-7f13-4925-975d-1ff0b90eb96a" name="Changes" comment="commit RemotePrinter">
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2/Prova-JavaRMI-2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2/RemotePrinter2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2/src/client/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2/src/dispatcher/Dispatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2/src/dispatcher/PrinterDispatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2/src/dispatcher/PrinterProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2/src/printer/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2/src/server/RemotePrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2/src/server/RemotePrinterSkeleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2/src/server/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2/src/server/Skeleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/RemotePrinter2_UDP.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/src/client/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/src/dispatcher/Dispatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/src/dispatcher/PrinterDispatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/src/dispatcher/PrinterProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/src/printer/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/src/server/RemotePrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/src/server/RemotePrinterSkeleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/src/server/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/src/server/Skeleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/client/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/client/Producer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/queue/adt/Queue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/queue/buffer/CircularQueue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/queue/monitor/QueueMonitor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/queue/wrapper/QueueWrapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/server/RemoteWarehouse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/server/Server.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/warehouse/Warehouse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queue/adt/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queue/buffer/CircularQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queue/monitor/QueueMonitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queue/wrapper/QueueWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/RemoteWarehouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RemotePrinter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RemotePrinter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RemotePrinter/RemotePrinter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../RemotePrinter/RemotePrinter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinterHandler/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinterHandler/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinterHandler/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinterHandler/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinterHandler/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinterHandler/RemotePrinterHandler.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinterHandler/src/client/DispatcherProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinterHandler/src/client/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinterHandler/src/client/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinterHandler/src/interfaces/Dispatchable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinterHandler/src/interfaces/Printer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinterHandler/src/server/Dispatcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinterHandler/src/server/DispatcherServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinterHandler/src/server/DispatcherSkeleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinterHandler/src/server/RemotePrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinterHandler/src/server/RemotePrinterServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinterHandler/src/server/Skeleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemoteWhiteboard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RemoteWhiteboard/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse_17-06-2014.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse_17-06-2014.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/warehouse/Warehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/warehouse/Warehouse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2C2Cy9h9QBOP1cTYzoMCRl1aIeI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -45,7 +107,11 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -57,6 +123,21 @@
       <option name="presentableId" value="Default" />
       <updated>1657991548762</updated>
     </task>
+    <task id="LOCAL-00001" summary="commit RemotePrinter">
+      <created>1657992266594</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1657992266594</updated>
+    </task>
+    <task id="LOCAL-00002" summary="commit RemotePrinter">
+      <created>1657992279000</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1657992279000</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -72,5 +153,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="commit RemotePrinter" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit RemotePrinter" />
   </component>
 </project>

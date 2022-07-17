@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1361e6c1-1dde-4ce8-a5b4-83b07d1f4c18" name="Changes" comment="commit">
+    <list default="true" id="6cc77f06-055a-40ab-8d35-184f8c41a873" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../RemotePrinter2/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../RemotePrinter2/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../RemotePrinter2/.idea/modules.xml" afterDir="false" />
@@ -21,20 +21,20 @@
       <change afterPath="$PROJECT_DIR$/../RemotePrinter2/src/server/RemotePrinterSkeleton.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../RemotePrinter2/src/server/Server.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../RemotePrinter2/src/server/Skeleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/RemotePrinter2_UDP.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/src/client/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/src/dispatcher/Dispatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/src/dispatcher/PrinterDispatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/src/dispatcher/PrinterProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/src/printer/Printer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/src/server/RemotePrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/src/server/RemotePrinterSkeleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/src/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemotePrinter2_UDP/src/server/Skeleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RemotePrinter2_UDP.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dispatcher/Dispatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dispatcher/PrinterDispatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dispatcher/PrinterProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/printer/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/RemotePrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/RemotePrinterSkeleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/Skeleton.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/out/client/Client.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/out/client/Producer.class" afterDir="false" />
@@ -71,7 +71,7 @@
       <change beforePath="$PROJECT_DIR$/../RemotePrinterHandler/src/server/RemotePrinter.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../RemotePrinterHandler/src/server/RemotePrinterServer.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../RemotePrinterHandler/src/server/Skeleton.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemoteWhiteboard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RemoteWhiteboard/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Warehouse_17-06-2014/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Warehouse_17-06-2014/Warehouse_17-06-2014.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/Warehouse_17-06-2014.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Warehouse_17-06-2014/src/warehouse/Warehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Warehouse_17-06-2014/src/warehouse/Warehouse.java" afterDir="false" />
@@ -81,23 +81,35 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2BydAILqguzKiFa1LBhioVtKUNs" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2C52v9uuYVpFOlSyvfCRMwnQgZw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/claudio/repos/Java/RemotePrinter",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -106,20 +118,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1361e6c1-1dde-4ce8-a5b4-83b07d1f4c18" name="Changes" comment="" />
-      <created>1657882113839</created>
+      <changelist id="6cc77f06-055a-40ab-8d35-184f8c41a873" name="Changes" comment="" />
+      <created>1658078355546</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1657882113839</updated>
+      <updated>1658078355546</updated>
     </task>
-    <task id="LOCAL-00001" summary="commit">
-      <created>1657882282990</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1657882282990</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,7 +138,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
