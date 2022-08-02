@@ -1,0 +1,3 @@
+﻿  Queue.cpp
+C:\Users\claudio\source\repos\Prova4Giugno2012\Prova4Giugno2012\Queue.cpp(23): warning C4715: 'Queue::pop': not all control paths return a value
+  Prova4Giugno2012.vcxproj -> C:\Users\claudio\source\repos\Prova4Giugno2012\Debug\Prova4Giugno2012.exe
