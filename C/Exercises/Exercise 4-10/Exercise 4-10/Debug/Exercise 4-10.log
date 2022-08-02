@@ -1,0 +1,5 @@
+﻿  Exercise 4-10.c
+c:\users\claudio pisa\desktop\develop\c\samples\exercises\exercise 4-10\exercise 4-10\exercise 4-10.c(115): warning C4018: '<': signed/unsigned mismatch
+c:\users\claudio pisa\desktop\develop\c\samples\exercises\exercise 4-10\exercise 4-10\exercise 4-10.c(125): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Exercise 4-10.vcxproj -> C:\Users\Claudio Pisa\Desktop\Develop\C\Samples\Exercises\Exercise 4-10\Debug\Exercise 4-10.exe
+  Exercise 4-10.vcxproj -> C:\Users\Claudio Pisa\Desktop\Develop\C\Samples\Exercises\Exercise 4-10\Debug\Exercise 4-10.pdb (Partial PDB)

@@ -1,0 +1,4 @@
+﻿  Exercise 4-7.c
+c:\users\claudio pisa\desktop\develop\c\samples\exercises\exercise 4-7\exercise 4-7\exercise 4-7.c(40): warning C4013: 'strlen' undefined; assuming extern returning int
+  Exercise 4-7.vcxproj -> C:\Users\Claudio Pisa\Desktop\Develop\C\Samples\Exercises\Exercise 4-7\Debug\Exercise 4-7.exe
+  Exercise 4-7.vcxproj -> C:\Users\Claudio Pisa\Desktop\Develop\C\Samples\Exercises\Exercise 4-7\Debug\Exercise 4-7.pdb (Partial PDB)
