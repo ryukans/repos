@@ -1,4 +1,4 @@
-package server;
+package gestore;
 
 import interfaces.IGestoreSportello;
 import interfaces.ISportello;
