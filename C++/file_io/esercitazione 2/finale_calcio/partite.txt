@@ -1,0 +1,6 @@
+Napoli Borussia 2 1
+Arsenal Napoli 2 0
+Borussia Arsenal 1 3
+Arsenal Borussia 1 3
+Borussia Napoli 2 1
+Napoli Arsenal 2 0

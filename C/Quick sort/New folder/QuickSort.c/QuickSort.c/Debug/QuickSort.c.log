@@ -1,4 +1,0 @@
-﻿  qsort.c
-c:\users\claudio pisa\desktop\develop\c\samples\quick sort\new folder\quicksort.c\quicksort.c\qsort.c(27): warning C4013: 'getch' undefined; assuming extern returning int
-  QuickSort.c.vcxproj -> C:\Users\Claudio Pisa\Desktop\Develop\C\Samples\Quick sort\New folder\QuickSort.c\Debug\QuickSort.c.exe
-  QuickSort.c.vcxproj -> C:\Users\Claudio Pisa\Desktop\Develop\C\Samples\Quick sort\New folder\QuickSort.c\Debug\QuickSort.c.pdb (Partial PDB)

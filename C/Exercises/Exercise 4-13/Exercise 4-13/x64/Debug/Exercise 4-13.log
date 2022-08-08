@@ -1,0 +1,7 @@
+﻿  Exercise 4-13.c
+c:\users\claudio pisa\desktop\develop\c\samples\quick sort\new folder\exercise 4-13\exercise 4-13\exercise 4-13.c(22): warning C4013: 'getch' undefined; assuming extern returning int
+c:\users\claudio pisa\desktop\develop\c\samples\quick sort\new folder\exercise 4-13\exercise 4-13\exercise 4-13.c(32): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\claudio pisa\desktop\develop\c\samples\quick sort\new folder\exercise 4-13\exercise 4-13\exercise 4-13.c(52): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+c:\users\claudio pisa\desktop\develop\c\samples\quick sort\new folder\exercise 4-13\exercise 4-13\exercise 4-13.c(65): warning C4020: 'reverse2': too many actual parameters
+  Exercise 4-13.vcxproj -> C:\Users\Claudio Pisa\Desktop\Develop\C\Samples\Quick sort\New folder\Exercise 4-13\x64\Debug\Exercise 4-13.exe
+  Exercise 4-13.vcxproj -> C:\Users\Claudio Pisa\Desktop\Develop\C\Samples\Quick sort\New folder\Exercise 4-13\x64\Debug\Exercise 4-13.pdb (Partial PDB)

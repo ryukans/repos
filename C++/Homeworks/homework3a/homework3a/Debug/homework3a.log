@@ -1,5 +1,0 @@
-﻿  main.cpp
-C:\Users\claudio\source\repos\srcdevelop\homework3a\homework3a\List.h(23,54): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-C:\Users\claudio\source\repos\srcdevelop\homework3a\homework3a\List.h(29,46): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-C:\Users\claudio\source\repos\srcdevelop\homework3a\homework3a\List.h(31,42): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-  homework3a.vcxproj -> C:\Users\claudio\Source\Repos\srcdevelop\homework3a\Debug\homework3a.exe

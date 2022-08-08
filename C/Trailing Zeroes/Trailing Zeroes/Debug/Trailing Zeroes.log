@@ -1,0 +1,5 @@
+﻿  main.c
+c:\users\claudio pisa\desktop\develop\c\samples\trailing zeroes\trailing zeroes\utilities.h(59): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+c:\users\claudio pisa\desktop\develop\c\samples\trailing zeroes\trailing zeroes\main.c(12): warning C4013: 'getch' undefined; assuming extern returning int
+  Trailing Zeroes.vcxproj -> C:\Users\Claudio Pisa\Desktop\Develop\C\Samples\Trailing Zeroes\Debug\Trailing Zeroes.exe
+  Trailing Zeroes.vcxproj -> C:\Users\Claudio Pisa\Desktop\Develop\C\Samples\Trailing Zeroes\Debug\Trailing Zeroes.pdb (Partial PDB)

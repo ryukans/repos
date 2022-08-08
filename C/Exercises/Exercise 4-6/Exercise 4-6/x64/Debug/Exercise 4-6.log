@@ -1,0 +1,4 @@
+﻿  Exercise 4-6.c
+c:\users\claudio pisa\desktop\develop\c\samples\exercises\exercise 4-6\exercise 4-6\exercise 4-6.c(122): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Exercise 4-6.vcxproj -> C:\Users\Claudio Pisa\Desktop\Develop\C\Samples\Exercises\Exercise 4-6\x64\Debug\Exercise 4-6.exe
+  Exercise 4-6.vcxproj -> C:\Users\Claudio Pisa\Desktop\Develop\C\Samples\Exercises\Exercise 4-6\x64\Debug\Exercise 4-6.pdb (Partial PDB)

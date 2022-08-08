@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1544969886 source:c:\users\claudio pisa\desktop\develop\c++\samples\file_io\matrice 3\normalizza_matrice\main.cpp
+	<iostream>
+	<fstream>
+	"util.h"
+
+1544969935 c:\users\claudio pisa\desktop\develop\c++\samples\file_io\matrice 3\normalizza_matrice\util.h
+

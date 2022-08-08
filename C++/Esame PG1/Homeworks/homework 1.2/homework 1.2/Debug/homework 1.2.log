@@ -1,0 +1,8 @@
+﻿  Source.cpp
+C:\Users\claudio\source\repos\srcdevelop\homework 1.2\homework 1.2\Source.cpp(34,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\claudio\source\repos\srcdevelop\homework 1.2\homework 1.2\Source.cpp(72,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\claudio\source\repos\srcdevelop\homework 1.2\homework 1.2\Source.cpp(83,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\claudio\source\repos\srcdevelop\homework 1.2\homework 1.2\Source.cpp(93,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\claudio\source\repos\srcdevelop\homework 1.2\homework 1.2\Source.cpp(94,33): warning C4018: '<': signed/unsigned mismatch
+C:\Users\claudio\source\repos\srcdevelop\homework 1.2\homework 1.2\Source.cpp(106,23): warning C4018: '<': signed/unsigned mismatch
+  homework 1.2.vcxproj -> C:\Users\claudio\source\repos\srcdevelop\homework 1.2\Debug\homework 1.2.exe

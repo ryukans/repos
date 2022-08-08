@@ -1,4 +1,0 @@
-﻿  ProvaP12017.cpp
-C:\Users\claudio\source\repos\ProvaP12017\ProvaP12017\Utente.h(19,59): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-C:\Users\claudio\source\repos\ProvaP12017\ProvaP12017\UtentePosta.h(16,92): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-  ProvaP12017.vcxproj -> C:\Users\claudio\source\repos\ProvaP12017\Debug\ProvaP12017.exe
