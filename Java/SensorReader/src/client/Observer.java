@@ -1,8 +1,8 @@
 package client;
 
-import dispatcher.Dispatcher;
+import dispatcher.ObserverDispatcher;
 import dispatcher.Reading;
-import interfaces.Dispatchable;
+import interfaces.Dispatcher;
 import interfaces.Observable;
 
 import java.io.*;
@@ -18,9 +18,9 @@ public class Observer
 {
     @Serial
     private static final long serialVersionUID = -8650330264164926164L;
-    private Dispatchable dispatcher;
+    private Dispatcher dispatcher;
 
-    public Observer(Dispatchable dispatcher) throws RemoteException{
+    public Observer(Dispatcher dispatcher) throws RemoteException{
         this.dispatcher = dispatcher;
     }
 
@@ -50,7 +50,7 @@ public class Observer
     {
         try {
             Registry rmi = LocateRegistry.getRegistry();
-            Dispatchable dispatcher = (Dispatchable) rmi.lookup(Dispatcher.CLASSNAME);
+            Dispatcher dispatcher = (Dispatcher) rmi.lookup(ObserverDispatcher.CLASSNAME);
 
             Observable observer = new Observer(dispatcher);
 

@@ -20,7 +20,6 @@ public class CircularQueueMutex extends QueueWrapper
         mutex = new ReentrantLock();
         producer = mutex.newCondition();
         consumer = mutex.newCondition();
-
     }
 
     @Override

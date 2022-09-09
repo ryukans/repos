@@ -5,30 +5,107 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="baa46aba-ce1d-4d1f-9233-9b14356d729e" name="Changes" comment="commit laptop">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/alert.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/client/AlertNotification.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/client/Generator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/client/Skeleton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/client/Subscriber.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/client/SubscriberSkeleton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/interfaces/Manager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/interfaces/Subscribable.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/server/ManagerServer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/server/Proxy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/server/Server.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/AlertNotification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/Skeleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/Subscriber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/SubscriberSkeleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/Subscribable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/ManagerServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/Proxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RemoteStorageSystem/out/logs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/Generator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SensorReader/src/Traccia.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/Actuator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/cmdlog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/out/production/Actuator/client/Actuator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/out/production/Actuator/client/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/out/production/Actuator/client/ClientMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/out/production/Actuator/client/DispatcherProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/out/production/Actuator/dispatcher/Dispatchable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/out/production/Actuator/server/Dispatcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/out/production/Actuator/server/DispatcherServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/out/production/Actuator/server/DispatcherSkeleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/out/production/Actuator/server/Skeleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/src/client/Actuator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/src/client/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/src/client/ClientMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/src/client/DispatcherProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/src/dispatcher/Dispatchable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/src/server/Dispatcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/src/server/DispatcherServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/src/server/DispatcherSkeleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actuator/src/server/Skeleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlertNotification.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/alert.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/client/AlertNotification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/client/Generator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/client/Skeleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/client/Subscriber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/client/SubscriberSkeleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/interfaces/Manager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/interfaces/Subscribable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/server/ManagerServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/server/Proxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/server/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/AlertNotification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/Generator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/Skeleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/Subscriber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/SubscriberSkeleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/Manager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/Subscribable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/ManagerServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/Proxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GestioneSportelli/src/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GestioneSportelli/src/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RemotePrinter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter/RemotePrinter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter/out/client/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter/out/dispatcher/Dispatcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter/out/dispatcher/DispatcherListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter/out/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter/out/printer/Printer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter/out/server/RemotePrinter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter/out/server/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter/src/client/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter/src/dispatcher/Dispatcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter/src/dispatcher/DispatcherListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter/src/printer/Printer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter/src/server/RemotePrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter/src/server/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter2/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter2/Prova-JavaRMI-2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter2/RemotePrinter2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter2/src/client/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter2/src/dispatcher/Dispatcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter2/src/dispatcher/PrinterDispatcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter2/src/dispatcher/PrinterProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter2/src/printer/Printer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter2/src/server/RemotePrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter2/src/server/RemotePrinterSkeleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter2/src/server/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RemotePrinter2/src/server/Skeleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SensorReader/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SensorReader/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SensorReader/SensorReader.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../SensorReader/SensorReader_22-10-2019.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SensorReader/src/client/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SensorReader/src/client/Generator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SensorReader/src/client/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SensorReader/src/client/Observer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SensorReader/src/dispatcher/Dispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SensorReader/src/dispatcher/ObserverDispatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SensorReader/src/interfaces/Dispatchable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SensorReader/src/interfaces/Dispatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SensorReader/src/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SensorReader/src/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Warehouse/src/client/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Warehouse/src/client/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Warehouse/src/queueImp/CircularQueueMutex.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Warehouse/src/queueImp/CircularQueueMutex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WarehouseJMS/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WarehouseJMS/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WarehouseJMS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WarehouseJMS/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WarehouseJMS/src/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WarehouseJMS/src/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WarehouseJMS/src/server/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WarehouseJMS/src/server/Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WarehouseJMS/src/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WarehouseJMS/src/server/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +137,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/claudio/repos/Java/SensorReader",
+    "last_opened_file_path": "C:/Users/claudio/repos/Java/GestioneSportelli",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"

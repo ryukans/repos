@@ -22,5 +22,13 @@ public class Test
             tClientB[i].start();
         }
 
+        for(int i = 0; i < 5; i++){
+            try {
+                tClientA[i].join();
+                tClientB[i].join();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
     }
 }

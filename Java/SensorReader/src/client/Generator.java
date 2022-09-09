@@ -1,9 +1,8 @@
 package client;
 
-import dispatcher.Dispatcher;
+import dispatcher.ObserverDispatcher;
 import dispatcher.Reading;
-import interfaces.Dispatchable;
-import interfaces.Observable;
+import interfaces.Dispatcher;
 
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
@@ -17,11 +16,14 @@ public class Generator
     {
         try{
             Registry rmi = LocateRegistry.getRegistry();
-            Dispatchable dispatcher = (Dispatchable) rmi.lookup(Dispatcher.CLASSNAME);
+            Dispatcher dispatcher = (Dispatcher) rmi.lookup(ObserverDispatcher.CLASSNAME);
             //Observable observer = new Observer(dispatcher);
 
             for(int i = 0; i < 3; i++){
-                Thread generator = new Thread(()->{
+                /*
+                * Creating generator thread
+                * */
+                new Thread(()->{
                     try{
                         Reading reading = new Reading();
                         String type;
@@ -48,9 +50,7 @@ public class Generator
                     catch(InterruptedException | RemoteException e){
                         throw new RuntimeException(e);
                     }
-                });
-
-                generator.start();
+                }).start();
             }
         }
         catch(RemoteException | NotBoundException e){
