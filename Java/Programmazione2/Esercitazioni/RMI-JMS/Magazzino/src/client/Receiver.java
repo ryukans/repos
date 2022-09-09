@@ -35,16 +35,8 @@ public class Receiver implements Runnable {
             QueueReceiver receiver = qs.createReceiver(cons);
             receiver.setMessageListener(new ClientListener());
 
-        } catch (NamingException e) {
-            e.printStackTrace();
-        } catch (JMSException e) {
-            // TODO Auto-generated catch block
+        } catch (NamingException | JMSException e) {
             e.printStackTrace();
         }
-
-
-
-
     }
-
 }

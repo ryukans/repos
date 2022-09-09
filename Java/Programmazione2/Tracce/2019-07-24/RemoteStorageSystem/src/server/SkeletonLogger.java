@@ -6,12 +6,12 @@ import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 
-public class LoggerServerSkeleton implements Logger
+public class SkeletonLogger implements Logger
 {
-    private Logger logger;
-    private int port;
+    private final Logger logger;
+    private final int port;
 
-    public LoggerServerSkeleton(Logger logger, int port)
+    public SkeletonLogger(Logger logger, int port)
     {
         this.logger = logger;
         this.port = port;
@@ -22,7 +22,7 @@ public class LoggerServerSkeleton implements Logger
         try{
             DatagramSocket socket = new DatagramSocket(this.port);
 
-            System.out.println("Skeleton entering while loop");
+            //System.out.println("Skeleton entering while loop"); Debug only
 
             while(true){
                 byte[] buffer = new byte[100];

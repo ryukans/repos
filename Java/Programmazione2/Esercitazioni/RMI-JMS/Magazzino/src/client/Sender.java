@@ -58,13 +58,8 @@ public class Sender implements Runnable {
             }
 
 
-        } catch (NamingException e) {
-            e.printStackTrace();
-        } catch (JMSException e) {
+        } catch (NamingException | JMSException e) {
             e.printStackTrace();
         }
-
-
     }
-
 }

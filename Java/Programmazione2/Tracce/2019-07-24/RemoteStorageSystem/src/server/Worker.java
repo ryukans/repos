@@ -11,9 +11,9 @@ import java.util.StringTokenizer;
 
 public class Worker extends Thread
 {
-    private DatagramSocket socket;
-    private DatagramPacket packet;
-    private Logger logger;
+    private final DatagramSocket socket;
+    private final DatagramPacket packet;
+    private final Logger logger;
 
     public Worker(DatagramSocket socket, DatagramPacket packet, Logger logger)
     {
@@ -26,7 +26,7 @@ public class Worker extends Thread
     {
         String message = new String(packet.getData(), 0, packet.getLength());
 
-        System.out.println ( "\n[Worker] Processing packet:\n" +
+        System.out.println ( "\nWorker |Processing packet:\n" +
                 "-> request size = " + packet.getLength() + "\n"
                 + "-> message = " + message );
 

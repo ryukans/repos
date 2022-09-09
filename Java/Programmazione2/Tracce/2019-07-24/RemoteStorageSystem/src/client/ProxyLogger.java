@@ -8,12 +8,12 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.SocketException;
 
-public class Proxy implements Logger
+public class ProxyLogger implements Logger
 {
-    private DatagramSocket socket;
-    private int port;
+    private final DatagramSocket socket;
+    private final int port;
 
-    public Proxy(int port)
+    public ProxyLogger(int port)
     {
         try{
             socket = new DatagramSocket();
