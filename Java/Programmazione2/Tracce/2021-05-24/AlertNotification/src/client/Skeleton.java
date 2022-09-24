@@ -10,7 +10,7 @@ import java.net.Socket;
 
 public class Skeleton extends Thread
 {
-    private Subscribable subscriber;
+    private final Subscribable subscriber;
     Socket socket;
 
     public Skeleton(Subscribable subscriber, Socket socket)
@@ -31,7 +31,6 @@ public class Skeleton extends Thread
             );
 
             String method = in.readUTF();
-
 
             if(method.equals("notifyAlert")) {
                 int port = in.readInt();

@@ -3,13 +3,13 @@ package server;
 import interfaces.Subscribable;
 
 import java.io.*;
+
 import java.net.Socket;
-import java.rmi.RemoteException;
 
 public class Proxy implements Subscribable
 {
-    private String host;
-    private int port;
+    private final String host;
+    private final int port;
 
     public Proxy(String host, int port)
     {

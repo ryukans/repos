@@ -1,8 +1,6 @@
 package client;
 
-import interfaces.Manager;
 import interfaces.Subscribable;
-
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -10,8 +8,8 @@ import java.rmi.RemoteException;
 
 public class SubscriberSkeleton implements Subscribable
 {
-    private Subscribable subscriber;
-    private int port;
+    private final Subscribable subscriber;
+    private final int port;
 
     public SubscriberSkeleton(Subscribable subscriber, int port) throws RemoteException
     {
@@ -22,14 +20,15 @@ public class SubscriberSkeleton implements Subscribable
     public void runSkeleton()
     {
         try(ServerSocket serverSocket = new ServerSocket(this.port)) {
-            Socket socket = null;
+            //noinspection InfiniteLoopStatement
             while(true) {
-                socket = serverSocket.accept();
+                Socket socket = serverSocket.accept();
                 Skeleton s = new Skeleton(this, socket);
 
                 s.start();
             }
-        } catch (IOException e) {
+        }
+        catch(IOException e) {
             throw new RuntimeException(e);
         }
     }
@@ -38,5 +37,4 @@ public class SubscriberSkeleton implements Subscribable
     public void notifyAlert(int criticality) throws RemoteException {
         subscriber.notifyAlert(criticality);
     }
-
 }

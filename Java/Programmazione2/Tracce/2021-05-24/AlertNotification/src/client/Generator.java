@@ -16,7 +16,7 @@ public class Generator
             Manager manager = (Manager) LocateRegistry.getRegistry().lookup(ManagerServer.CLASSNAME);
 
             for(int i = 0; i < 3; i++) {
-                Thread t = new Thread(()->{
+                new Thread(() -> {
                     int componentId = 5;
                     int criticality = new Random().nextInt(1, 3);
 
@@ -26,14 +26,11 @@ public class Generator
                     catch(RemoteException e) {
                         throw new RuntimeException(e);
                     }
-                });
-
-                t.start();
+                }).start();
             }
         }
         catch(RemoteException | NotBoundException e) {
             throw new RuntimeException(e);
         }
-
     }
 }

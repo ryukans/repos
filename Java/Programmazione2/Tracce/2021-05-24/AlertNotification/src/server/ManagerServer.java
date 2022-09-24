@@ -1,18 +1,14 @@
 package server;
 
 import client.AlertNotification;
-import client.Subscriber;
-import client.SubscriberSkeleton;
 import interfaces.Manager;
-import interfaces.Subscribable;
 
-import javax.sound.midi.SysexMessage;
 import java.io.Serial;
+
 import java.rmi.server.UnicastRemoteObject;
 import java.rmi.RemoteException;
+
 import java.util.HashMap;
-import java.util.Map;
-import java.util.Vector;
 import java.util.concurrent.Semaphore;
 
 public class ManagerServer
@@ -22,8 +18,8 @@ public class ManagerServer
     @Serial
     private static final long serialVersionUID = 3396653297645375487L;
     public static final String CLASSNAME = "ManagerServer";
-    private HashMap<Integer, Proxy> subs;
-    private Semaphore mutex;
+    private final HashMap<Integer, Proxy> subs;
+    private final Semaphore mutex;
 
 
     public ManagerServer() throws RemoteException

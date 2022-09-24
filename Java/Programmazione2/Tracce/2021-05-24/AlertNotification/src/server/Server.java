@@ -1,8 +1,6 @@
 package server;
 
 import interfaces.Manager;
-import interfaces.Subscribable;
-
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;

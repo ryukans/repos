@@ -12,22 +12,9 @@ import java.rmi.registry.Registry;
 
 public class Subscriber implements Subscribable
 {
-    private int componentId;
-    private int port;
-
-    public Subscriber(int componentId, int port)
-    {
-        this.componentId = componentId;
-        this.port = port;
-    }
-
-    public int getComponentId() throws RemoteException {
-        return componentId;
-    }
-
     public void notifyAlert(int criticality) throws RemoteException
     {
-        System.out.println("Critically level: " + criticality);
+        System.out.println("Criticality level: " + criticality);
 
         try {
             PrintWriter out = new PrintWriter(
@@ -36,7 +23,7 @@ public class Subscriber implements Subscribable
                     )
             );
 
-            out.println("Critically level: " + criticality);
+            out.println("Criticality level: " + criticality);
             out.flush();
             out.close();
         }
@@ -53,7 +40,7 @@ public class Subscriber implements Subscribable
             int componentId = Integer.parseInt(args[0]);
             int port = Integer.parseInt(args[1]);
 
-            Subscriber subscriber = new Subscriber(componentId, port);
+            Subscriber subscriber = new Subscriber();
             SubscriberSkeleton subscriberSkeleton = new SubscriberSkeleton(subscriber, port);
 
             manager.subscribe(componentId, port);
