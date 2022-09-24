@@ -12,6 +12,22 @@ import java.rmi.registry.Registry;
 
 public class Subscriber implements Subscribable
 {
+    private final int componentId;
+    private final int port;
+
+    public Subscriber(int componentId, int port)
+    {
+        this.componentId = componentId;
+        this.port = port;
+    }
+    public int getComponentId() {
+        return componentId;
+    }
+
+    public int getPort() {
+        return port;
+    }
+
     public void notifyAlert(int criticality) throws RemoteException
     {
         System.out.println("Criticality level: " + criticality);
@@ -32,22 +48,25 @@ public class Subscriber implements Subscribable
         }
     }
 
-    public static void main(String[] args)
+    public static class Tester
     {
-        try {
-            Registry rmi = LocateRegistry.getRegistry();
-            Manager manager = (Manager) rmi.lookup(ManagerServer.CLASSNAME);
-            int componentId = Integer.parseInt(args[0]);
-            int port = Integer.parseInt(args[1]);
+        public static void main(String[] args)
+        {
+            try {
+                Registry rmi = LocateRegistry.getRegistry();
+                Manager manager = (Manager) rmi.lookup(ManagerServer.CLASSNAME);
+                int componentId = Integer.parseInt(args[0]);
+                int port = Integer.parseInt(args[1]);
 
-            Subscriber subscriber = new Subscriber();
-            SubscriberSkeleton subscriberSkeleton = new SubscriberSkeleton(subscriber, port);
+                Subscriber subscriber = new Subscriber(componentId, port);
+                SubscriberSkeleton subscriberSkeleton = new SubscriberSkeleton(subscriber, port);
 
-            manager.subscribe(componentId, port);
-            subscriberSkeleton.runSkeleton();
-        }
-        catch(RemoteException | NotBoundException e) {
-            throw new RuntimeException(e);
+                manager.subscribe(subscriber.getComponentId(), subscriber.getPort());
+                subscriberSkeleton.runSkeleton();
+            }
+            catch(RemoteException | NotBoundException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 }
